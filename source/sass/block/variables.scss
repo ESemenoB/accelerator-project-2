@@ -1,0 +1,35 @@
+:root {
+  //шрифт
+
+  --font-base: #2d383f;
+  --dark-background: #ffffff;
+
+  //кнопки
+  --button-base: #0266c1;
+  --button-text: #2d383f;
+
+  //фон
+  --background-base: #ffffff;
+  --background-additional: #0266c1;
+
+  //icon
+
+  --icon-base: #2d383f;
+  --icon-additional: #0266c1;
+  --icon-dark-background: #ffffff;
+
+  //оверлеи
+  --big-slider: linear-gradient(
+    112.1deg,
+    rgba(15, 20, 41, 0.33) 17.23%,
+    rgba(15, 20, 41, 0) 94.93%
+  );
+
+  --tour-cards: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 22.3%,
+    rgba(0, 0, 0, 0) 60.32%
+  );
+
+  --burger-menu: #2d383f;
+}

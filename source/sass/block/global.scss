@@ -1,0 +1,282 @@
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 77px;
+  }
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 55px;
+  }
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 35px;
+    line-height: 100px;
+  }
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  //   @media screen and (min-width: 1440px) {
+  //     font-size: 35px;
+  //     line-height: 100px;
+  //   }
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 21px;
+    // line-height: 100px;
+  }
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    // line-height: 100px;
+  }
+}
+
+h7 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  //   @media screen and (min-width: 768px) {
+  //     font-size: 25px;
+  //   }
+  //   @media screen and (min-width: 1440px) {
+  //     font-size: 35px;
+  //     line-height: 100px;
+  //   }
+}
+
+.text--big {
+  //   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  //   @media screen and (min-width: 1440px) {
+  //     font-size: 35px;
+  //     line-height: 100px;
+  //   }
+}
+
+.text--regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  // @media screen and (min-width: 1440px) {
+  //   font-size: 35px;
+  //   line-height: 100px;
+  // }
+}
+
+.text--small {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  //   @media screen and (min-width: 1440px) {
+  //     font-size: 35px;
+  //     line-height: 100px;
+  //   }
+}
+
+.text--xsmall {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: 1440px) {
+    //   font-size: 35px;
+    line-height: 16px;
+  }
+}
+
+.caption--big {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    // line-height: 18px;
+  }
+  //   @media screen and (min-width: 1440px) {
+  //     //   font-size: 35px;
+  //     line-height: 16px;
+  //   }
+}
+
+.caption--medium {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  //   @media screen and (min-width: 768px) {
+  //     font-size: 13px;
+  //     // line-height: 18px;
+  //   }
+  //   //   @media screen and (min-width: 1440px) {
+  //   //     //   font-size: 35px;
+  //   //     line-height: 16px;
+  //   //   }
+}
+
+.caption--small {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1;
+  //   @media screen and (min-width: 768px) {
+  //     font-size: 13px;
+  //     // line-height: 18px;
+  //   }
+  @media screen and (min-width: 1440px) {
+    //   font-size: 35px;
+    line-height: 100px;
+  }
+}
+
+.buttons--big {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.buttons--regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  //   @media screen and (min-width: 768px) {
+  //     font-size: 13px;
+  //     // line-height: 18px;
+  //   }
+  //   //   @media screen and (min-width: 1440px) {
+  //   //     //   font-size: 35px;
+  //   //     line-height: 16px;
+  //   //   }
+}
+
+.inputs--nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  //   @media screen and (min-width: 768px) {
+  //     font-size: 13px;
+  //     // line-height: 18px;
+  //   }
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    //   line-height: 16px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
