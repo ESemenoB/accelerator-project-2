@@ -1,121 +1,29 @@
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 1;
+.titel-shadow {
+  overflow-wrap: break-word;
+  position: relative;
 
-  @media screen and (min-width: 768px) {
-    font-size: 56px;
+  h2 {
+    @include title-h2;
+
+    position: absolute;
+    opacity: 3%;
+    width: fill-available;
   }
-  @media screen and (min-width: 1440px) {
-    font-size: 77px;
+
+  h3 {
+    @include title-h3;
   }
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 1;
-
-  @media screen and (min-width: 768px) {
-    font-size: 40px;
-  }
-  @media screen and (min-width: 1440px) {
-    font-size: 55px;
-  }
-}
-
-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 1;
-
-  @media screen and (min-width: 768px) {
-    font-size: 25px;
-  }
-  @media screen and (min-width: 1440px) {
-    font-size: 35px;
-    line-height: 100px;
-  }
-}
-
-h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
-    line-height: 28px;
-  }
-  //   @media screen and (min-width: 1440px) {
-  //     font-size: 35px;
-  //     line-height: 100px;
-  //   }
-}
-
-h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1;
-
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-  }
-  @media screen and (min-width: 1440px) {
-    font-size: 21px;
-    // line-height: 100px;
-  }
-}
-
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1;
-
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-  }
-  @media screen and (min-width: 1440px) {
-    font-size: 18px;
-    // line-height: 100px;
-  }
-}
-
-h7 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-
-  //   @media screen and (min-width: 768px) {
-  //     font-size: 25px;
-  //   }
-  //   @media screen and (min-width: 1440px) {
-  //     font-size: 35px;
-  //     line-height: 100px;
-  //   }
 }
 
 .text--big {
-  //   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (width >= 768px) {
     font-size: 17px;
     line-height: 24px;
   }
-  //   @media screen and (min-width: 1440px) {
-  //     font-size: 35px;
-  //     line-height: 100px;
-  //   }
 }
 
 .text--regular {
@@ -124,14 +32,10 @@ h7 {
   font-size: 14px;
   line-height: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (width >= 768px) {
     font-size: 16px;
     line-height: 24px;
   }
-  // @media screen and (min-width: 1440px) {
-  //   font-size: 35px;
-  //   line-height: 100px;
-  // }
 }
 
 .text--small {
@@ -140,58 +44,10 @@ h7 {
   font-size: 12px;
   line-height: 18px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (width >= 768px) {
     font-size: 14px;
     line-height: 22px;
   }
-  //   @media screen and (min-width: 1440px) {
-  //     font-size: 35px;
-  //     line-height: 100px;
-  //   }
-}
-
-.text--xsmall {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    line-height: 18px;
-  }
-  @media screen and (min-width: 1440px) {
-    //   font-size: 35px;
-    line-height: 16px;
-  }
-}
-
-.caption--big {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1;
-  @media screen and (min-width: 768px) {
-    font-size: 13px;
-    // line-height: 18px;
-  }
-  //   @media screen and (min-width: 1440px) {
-  //     //   font-size: 35px;
-  //     line-height: 16px;
-  //   }
-}
-
-.caption--medium {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1;
-  //   @media screen and (min-width: 768px) {
-  //     font-size: 13px;
-  //     // line-height: 18px;
-  //   }
-  //   //   @media screen and (min-width: 1440px) {
-  //   //     //   font-size: 35px;
-  //   //     line-height: 16px;
-  //   //   }
 }
 
 .caption--small {
@@ -199,40 +55,10 @@ h7 {
   font-weight: 300;
   font-size: 12px;
   line-height: 1;
-  //   @media screen and (min-width: 768px) {
-  //     font-size: 13px;
-  //     // line-height: 18px;
-  //   }
-  @media screen and (min-width: 1440px) {
-    //   font-size: 35px;
+
+  @media screen and (width >= 1440px) {
     line-height: 100px;
   }
-}
-
-.buttons--big {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1;
-  text-transform: uppercase;
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-  }
-}
-
-.buttons--regular {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1;
-  //   @media screen and (min-width: 768px) {
-  //     font-size: 13px;
-  //     // line-height: 18px;
-  //   }
-  //   //   @media screen and (min-width: 1440px) {
-  //   //     //   font-size: 35px;
-  //   //     line-height: 16px;
-  //   //   }
 }
 
 .inputs--nav {
@@ -240,14 +66,15 @@ h7 {
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
-  //   @media screen and (min-width: 768px) {
-  //     font-size: 13px;
-  //     // line-height: 18px;
-  //   }
-  @media screen and (min-width: 1440px) {
+
+  @media screen and (width >= 1440px) {
     font-size: 16px;
-    //   line-height: 16px;
   }
+}
+
+.title__shadow {
+  position: absolute;
+  opacity: 3%;
 }
 
 button {
@@ -279,4 +106,256 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+.button-small {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+  min-width: 180px;
+  text-align: center;
+}
+
+.button-link {
+  cursor: pointer;
+  background-color: var(--button-base);
+  color: var(--dark-background);
+}
+
+.button-link:hover {
+  background-color: var(--background-base);
+  color: var(--button-hover);
+  box-shadow: 0 0 0 1px var(--button-hover);
+}
+
+.button-link:focus {
+  background-color: var(--background-base);
+  color: var(--button-hover);
+}
+
+.button-link:active {
+  background-color: var(--button-hover);
+  color: var(--dark-background);
+}
+
+.link:hover {
+  color: var(--button-hover);
+  opacity: 20%;
+
+  svg {
+    --arrow-color: var(--button-hover);
+  }
+}
+
+.link:focus {
+  color: var(--icon-additional);
+  opacity: 100%;
+
+  svg {
+    --arrow-color: var(--icon-additional);
+  }
+}
+
+.link:active {
+  color: var(--button-hover);
+  opacity: 100%;
+
+  svg {
+    --arrow-color: var(--button-hover);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  cursor: pointer;
+  border: 1px solid var(--button-base);
+  background-color: var(--button-base);
+
+  svg {
+    --button-arrow-color: var(--dark-background);
+  }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  border: 1px solid var(--button-hover);
+  background-color: transparent;
+
+  svg {
+    --button-arrow-color: var(--button-hover);
+  }
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  border: 1px solid transparent;
+  background-color: transparent;
+
+  svg {
+    --button-arrow-color: var(--button-hover);
+  }
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  border: 1px solid var(--button-hover);
+  background-color: var(--button-hover);
+
+  svg {
+    --button-arrow-color: var(--icon-dark-background);
+  }
+}
+
+.swiper-button-disabled {
+  pointer-events: none;
+  cursor: default;
+  border: 1px solid var(--disabled);
+  background-color: var(--disabled);
+
+  svg {
+    --button-arrow-color: var(--icon-dark-background);
+  }
+}
+
+.social-link,
+.slide__link {
+  border: 1px solid rgb(45, 56, 63, 0.3);
+
+  svg {
+    --icon-vk: var(--font-base);
+  }
+}
+
+.social-link:hover,
+.slide__link:hover {
+  border: 1px solid var(--font-base);
+
+  svg {
+    --icon-vk: var(--font-base);
+    --icon-ok: var(--icon-base);
+    --icon-reddit: var(--icon-base);
+  }
+}
+
+.social-link:focus,
+.slide__link:focus {
+  border: 1px solid transparent;
+
+  svg {
+    --icon-vk: var(--font-base);
+    --icon-ok: var(--icon-base);
+    --icon-reddit: var(--icon-base);
+  }
+}
+
+.social-link:active,
+.slide__link:active {
+  border: 1px solid var(--icon-additional);
+  background-color: var(--icon-additional);
+
+  svg {
+    --icon-vk: var(--icon-dark-background);
+    --icon-ok: var(--icon-dark-background);
+    --icon-reddit: var(--icon-dark-background);
+  }
+}
+
+.footer__tel:hover {
+  color: var(--icon-additional);
+  opacity: 10%;
+}
+
+.footer__tel:focus {
+  color: var(--icon-additional);
+  opacity: 100%;
+}
+
+.footer__tel:active {
+  color: var(--button-hover);
+  opacity: 100%;
+}
+
+.item__tel:hover {
+  opacity: 50%;
+}
+
+.item__tel:focus {
+  color: var(--font-base);
+}
+
+.item__tel:active {
+  color: var(--button-hover);
+}
+
+.footer__nav--link {
+  position: relative;
+}
+
+.footer__nav--link:hover::before {
+  display: block;
+  position: absolute;
+  content: "";
+  padding: 3px 5px;
+  width: 100%;
+  height: 100%;
+  left: -6px;
+  bottom: -5px;
+  border-bottom: 1px solid var(--font-base);
+}
+
+.footer__nav--link:focus::before {
+  display: block;
+  position: absolute;
+  content: "";
+  padding: 3px 5px;
+  width: 100%;
+  height: 100%;
+  left: -6px;
+  bottom: -5px;
+  border: 1px solid var(--font-base);
+}
+
+.footer__nav--link:active {
+  color: var(--button-base);
+}
+
+.footer__nav--link:active::before {
+  border: none;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__item:hover::before {
+  display: block;
+  position: absolute;
+  content: "";
+  padding: 3px 5px;
+  width: 100%;
+  height: 100%;
+  left: -6px;
+  bottom: -5px;
+  border-bottom: 1px solid var(--dark-background);
+}
+
+.menu__item:focus::before {
+  display: block;
+  position: absolute;
+  content: "";
+  padding: 3px 5px;
+  width: 100%;
+  height: 100%;
+  left: -6px;
+  bottom: -5px;
+  border: 1px solid var(--dark-background);
+}
+
+.menu__item:active {
+  color: var(--button-hover);
+}
+
+.menu__item:active::before {
+  border: none;
 }

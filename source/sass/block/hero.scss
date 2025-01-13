@@ -1,0 +1,622 @@
+.hero .hero__swiper {
+  position: relative;
+}
+
+.hero .swiper-wrapper {
+  width: 320px;
+
+  // position: relative;
+}
+
+.hero .swiper-slide {
+  width: 320px;
+
+  // min-height: 568px;
+  // position: relative;
+}
+
+.hero__swiper .slide__details {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  bottom: 40px;
+  width: 100%;
+  height: 16px;
+  text-align: center;
+  z-index: 6;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  border-radius: 50px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--background-base);
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: var(--bullet-hover);
+  border: 1px solid var(--background-base);
+}
+
+.swiper-pagination-bullet:active {
+  background-color: var(--bulet-active);
+  border: 1px solid var(--background-base);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1; /* Активный буллет */
+  background-color: var(--background-base); /* Цвет активного буллета */
+}
+
+.swiper-slide-container {
+  width: 288px;
+  margin: 0 auto;
+  color: var(--dark-background);
+  text-align: center;
+
+  h2 {
+    @include title-h2;
+
+    // margin-top: 145px;
+    // margin-bottom: 0;
+    // color: var(--dark-background);
+    // text-align: center;
+  }
+
+  p {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  a {
+    margin-top: 60px;
+    margin-bottom: 134px;
+
+    @include buttons-regular;
+  }
+}
+
+.slide--caucasus {
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(
+      112.1deg,
+      rgba(15, 20, 41, 0.33) 17.23%,
+      rgba(15, 20, 41, 0) 94.93%
+    ),
+    url("../../img/caucasus-mobile@x1.webp");
+
+  h2 {
+    margin-top: 145px;
+    margin-bottom: 0;
+  }
+}
+
+.slide--kamchatka {
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(
+      112.1deg,
+      rgba(15, 20, 41, 0.33) 17.23%,
+      rgba(15, 20, 41, 0) 94.93%
+    ),
+    url("../../img/kamchatka-mobile@x1.webp");
+
+  h2 {
+    margin-top: 135px;
+    margin-bottom: 0;
+  }
+}
+
+.slide--altai {
+  background-size: cover;
+  background-position: center;
+  background-image:
+    linear-gradient(
+      112.1deg,
+      rgba(15, 20, 41, 0.33) 17.23%,
+      rgba(15, 20, 41, 0) 94.93%
+    ),
+    url("../../img/altai-mobile@x1.webp");
+
+  h2 {
+    margin-top: 122px;
+    margin-bottom: 0;
+  }
+}
+
+/* Для экранов с высокой плотностью пикселей (ретина) */
+@media (resolution >= 2dppx), (resolution >= 192dpi) {
+  .slide--caucasus {
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/caucasus-mobile@x2.webp");
+  }
+
+  .slide--kamchatka {
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/kamchatka-mobile@x2.webp");
+  }
+
+  .slide--altai {
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/altai-mobile@x2.webp");
+  }
+}
+
+@media screen and (width >= 768px) {
+  // .hero .hero__swiper {
+  //     // position: relative;
+  // }
+  .hero .swiper-wrapper {
+    width: 768px;
+
+    // position: relative;
+  }
+
+  .hero .swiper-slide {
+    width: 768px;
+
+    // min-height: 1034px;
+  }
+
+  //     }
+  //   }
+  // }
+
+  .swiper-pagination {
+    // position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    bottom: 40px;
+
+    /* left: 141px; */
+    // right: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    z-index: 6;
+  }
+
+  // .swiper-pagination-bullet {
+  //   // display: block;
+  //   // border-radius: 50px;
+  //   // width: 18px;
+  //   // height: 18px;
+  //   // background-color: #000; /* Цвет буллетов */
+  //   border: 1px solid var(--background-base);
+
+  //   // opacity: 0.5;
+  // }
+
+  // .swiper-pagination-bullet:hover {
+  //   // display: block;
+  //   // border-radius: 50px;
+  //   // width: 14px;
+  //   // height: 14px;
+  //   background-color: var(--bullet-hover);
+  //   border: 1px solid var(--background-base);
+
+  //   // opacity: 0.5;
+  // }
+
+  // .swiper-pagination-bullet:active {
+  //   // display: block;
+  //   // border-radius: 50px;
+  //   // width: 14px;
+  //   // height: 14px;
+  //   background-color: rgb(255, 255, 255, 0.5);
+  //   border: 1px solid var(--background-base);
+
+  //   // opacity: 0.5;
+  // }
+
+  // .swiper-pagination-bullet-active {
+  //   opacity: 1; /* Активный буллет */
+  //   background-color: var(--background-base); /* Цвет активного буллета */
+  // }
+
+  .swiper-slide-container {
+    width: 678px;
+    margin: 0 auto;
+    color: var(--dark-background);
+    text-align: center;
+
+    h2 {
+      @include title-h1;
+
+      margin-top: 342px;
+
+      // color: var(--dark-background);
+      // text-align: center;
+    }
+
+    p {
+      width: 500px;
+      margin: 0 auto;
+      padding: 15px 0 0;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    a {
+      margin-top: 37px;
+    }
+  }
+
+  .slide--kamchatka {
+    background-size: cover;
+    background-position: center;
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/kamchatka-tablet@x1.webp");
+
+    .swiper-slide-container {
+      // width: 678px;
+      // margin: 0 auto;
+      // color: var(--dark-background);
+      // text-align: center;
+
+      h2 {
+        margin-top: 137px;
+
+        // color: var(--dark-background);
+        // text-align: center;
+      }
+
+      // p {
+      //   width: 500px;
+      //   margin: 0 auto;
+      //   padding: 15px 0 0 0;
+      //   font-weight: 400;
+      //   font-size: 17px;
+      //   line-height: 24px;
+      // }
+
+      // a {
+      //   margin-top: 35px;
+      // }
+    }
+  }
+
+  //   .slide--kamchatka {
+  // }
+
+  .slide--caucasus {
+    background-size: cover;
+    background-position: center;
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/caucasus-tablet@x1.webp");
+  }
+
+  .slide--altai {
+    background-size: cover;
+    background-position: center;
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/altai-tablet@x1.webp");
+  }
+
+  /* Для экранов с высокой плотностью пикселей (ретина) */
+  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+    .slide--caucasus {
+      background-image:
+        linear-gradient(
+          112.1deg,
+          rgba(15, 20, 41, 0.33) 17.23%,
+          rgba(15, 20, 41, 0) 94.93%
+        ),
+        url("../../img/caucasus-tablet@x2.webp");
+    }
+
+    .slide--kamchatka {
+      background-image:
+        linear-gradient(
+          112.1deg,
+          rgba(15, 20, 41, 0.33) 17.23%,
+          rgba(15, 20, 41, 0) 94.93%
+        ),
+        url("../../img/kamchatka-tablet@x2.webp");
+    }
+
+    .slide--altai {
+      background-image:
+        linear-gradient(
+          112.1deg,
+          rgba(15, 20, 41, 0.33) 17.23%,
+          rgba(15, 20, 41, 0) 94.93%
+        ),
+        url("../../img/altai-tablet@x2.webp");
+    }
+  }
+}
+
+@media screen and (width >= 1440px) {
+  // .hero .hero__swiper {
+  //     // position: relative;
+  //     }
+  .hero .swiper-wrapper {
+    width: 1440px;
+
+    // position: relative;
+  }
+
+  .hero .swiper-slide {
+    width: 1440px;
+
+    // min-height: 800px;
+    padding: 200px 0 80px;
+  }
+
+  //     }
+  //   }
+  // }
+
+  .swiper-pagination {
+    // position: absolute;
+    // display: flex;
+    justify-content: flex-end;
+
+    // gap: 20px;
+    bottom: 92px;
+
+    /* left: 141px; */
+    right: 120px;
+
+    // width: 100%;
+    // height: 16px;
+    // text-align: center;
+    // z-index: 6;
+  }
+
+  .swiper-pagination-bullet {
+    // display: block;
+    // border-radius: 50px;
+    width: 18px;
+    height: 18px;
+
+    // background-color: #000; /* Цвет буллетов */
+    // border: 1px solid var(--background-base);
+    // opacity: 0.5;
+  }
+
+  // .swiper-pagination-bullet:hover {
+  //   // display: block;
+  //   // border-radius: 50px;
+  //   // width: 14px;
+  //   // height: 14px;
+  //   background-color: var(--bullet-hover);
+  //   border: 1px solid var(--background-base);
+  //   // opacity: 0.5;
+  // }
+
+  // .swiper-pagination-bullet:active {
+  //   // display: block;
+  //   // border-radius: 50px;
+  //   // width: 14px;
+  //   // height: 14px;
+  //   background-color: rgb(255, 255, 255, 0.5);
+  //   border: 1px solid var(--background-base);
+  //   // opacity: 0.5;
+  // }
+
+  // .swiper-pagination-bullet-active {
+  //   opacity: 1; /* Активный буллет */
+  //   background-color: var(--background-base); /* Цвет активного буллета */
+  // }
+
+  .swiper-slide-container {
+    width: 780px;
+    margin: 0 120px;
+    color: var(--dark-background);
+    text-align: left;
+
+    // padding: 200px 0 80px;
+
+    h2 {
+      margin: 0; // color: var(--dark-background);
+      // text-align: left;
+    }
+
+    p {
+      width: 420px;
+      margin: 0;
+      padding: 23px 0 0;
+
+      // font-weight: 400;
+      // font-size: 17px;
+      // line-height: 24px;
+    }
+
+    // a {
+    //   margin-top: 35px;
+    // }
+  }
+
+  .slide--kamchatka,
+  .slide--altai {
+    .swiper-slide-container {
+      width: 925px;
+
+      // margin: 0 auto;
+      // color: var(--dark-background);
+      // text-align: center;
+
+      h2 {
+        margin-top: 0;
+
+        //   color: var(--dark-background);
+        //   text-align: center;
+      }
+
+      p {
+        width: 465px;
+
+        //   margin: 0 auto;
+        //   padding: 15px 0 0 0;
+        //   font-weight: 400;
+        //   font-size: 17px;
+        //   line-height: 24px;
+      }
+
+      // a {
+      //   margin-top: 35px;
+      // }
+    }
+  }
+
+  .slide--caucasus {
+    background-size: cover;
+    background-position: center;
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/caucasus-desktop@x1.webp");
+  }
+
+  .slide--kamchatka {
+    background-size: cover;
+    background-position: center;
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/kamchatka-desktop@x1.webp");
+  }
+
+  .slide--altai {
+    background-size: cover;
+    background-position: center;
+    background-image:
+      linear-gradient(
+        112.1deg,
+        rgba(15, 20, 41, 0.33) 17.23%,
+        rgba(15, 20, 41, 0) 94.93%
+      ),
+      url("../../img/altai-desktop@x1.webp");
+  }
+
+  /* Для экранов с высокой плотностью пикселей (ретина) */
+  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+    .slide--caucasus {
+      background-image:
+        linear-gradient(
+          112.1deg,
+          rgba(15, 20, 41, 0.33) 17.23%,
+          rgba(15, 20, 41, 0) 94.93%
+        ),
+        url("../../img/caucasus-desktop@x2.webp");
+    }
+
+    .slide--kamchatka {
+      background-image:
+        linear-gradient(
+          112.1deg,
+          rgba(15, 20, 41, 0.33) 17.23%,
+          rgba(15, 20, 41, 0) 94.93%
+        ),
+        url("../../img/kamchatka-desktop@x2.webp");
+    }
+
+    .slide--altai {
+      background-image:
+        linear-gradient(
+          112.1deg,
+          rgba(15, 20, 41, 0.33) 17.23%,
+          rgba(15, 20, 41, 0) 94.93%
+        ),
+        url("../../img/altai-desktop@x2.webp");
+    }
+  }
+
+  .hero__swiper .slide__details {
+    display: flex;
+
+    // position: absolute;
+    gap: 10px;
+
+    // bottom: 80px;
+    // left: 120px;
+    color: var(--dark-background);
+
+    // margin-bottom: 80px;
+
+    @include text-xsmall;
+
+    li {
+      position: relative;
+
+      // line-height: 16px;
+      padding: 13px 18px 13px 40px;
+      border: 1px solid rgb(255, 255, 255, 0.5);
+    }
+  }
+
+  .details__length::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 16px;
+    bottom: 16px;
+    left: 20px;
+    background-image: url("../../img/sprite/moon.svg");
+    background-size: cover;
+  }
+
+  .details__level::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 16px;
+    bottom: 16px;
+    left: 20px;
+    background-image: url("../../img/sprite/level.svg");
+    background-size: cover;
+  }
+}

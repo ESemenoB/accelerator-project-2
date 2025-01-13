@@ -1,0 +1,363 @@
+.adv {
+  box-sizing: border-box;
+  padding: 20px 0;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.adv__title {
+  position: relative;
+  min-height: 55px;
+  text-align: center;
+  color: var(--font-base);
+
+  h2 {
+    top: -13px;
+    left: 16%;
+  }
+
+  h3 {
+    margin: 16px 17px;
+  }
+}
+
+.adv__button {
+  display: none;
+}
+
+.adv__button-prev,
+.adv__button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 33px;
+
+  svg {
+    width: 13px;
+    height: 10px;
+  }
+}
+
+.adv__button-next {
+  transform: rotate(180deg);
+}
+
+.slide__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--icon-additional);
+
+  --icon-background: var(--icon-additional);
+
+  // svg {
+  //   width: 24px;
+  //   height: 24px;
+  // }
+}
+
+.adv__swiper {
+  width: 290px;
+  margin-top: 4px;
+}
+
+.adv__swiper .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.adv__swiper .swiper-slide {
+  box-sizing: border-box;
+  width: 290px;
+  min-height: 239px;
+  padding: 19px 9px;
+  border: 1px solid var(--border-opacity);
+}
+
+.adv__swiper .slide__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.adv__swiper .slide__description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+
+  :first-child {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  :last-child {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}
+
+.slide-gently .slide__description {
+  p:first-child {
+    width: 178px;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .adv {
+    // box-sizing: border-box;
+    padding: 40px 0;
+    width: 768px;
+
+    // margin: 0 auto;
+  }
+
+  .adv__title {
+    // position: relative;
+    // min-height: 55px;
+    // text-align: center;
+    // color: var(--font-base);
+    h2 {
+      top: -15px;
+      left: 28.2%;
+    }
+
+    h3 {
+      margin: 20px 10px;
+    }
+  }
+
+  .adv__button {
+    display: none;
+  }
+
+  .adv__button-prev,
+  .adv__button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 33px;
+
+    svg {
+      width: 13px;
+      height: 10px;
+    }
+  }
+
+  .adv__button-next {
+    transform: rotate(180deg);
+  }
+
+  .slide__icon {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+
+    // border: 1px solid var(--icon-additional);
+    // --icon-background: var(--icon-additional);
+    // svg {
+    //   width: 24px;
+    //   height: 24px;
+    // }
+  }
+
+  .adv__swiper {
+    width: 678px;
+    margin-top: 30px;
+  }
+
+  .adv__swiper .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    // gap: 15px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .adv__swiper .swiper-slide {
+    // box-sizing: border-box;
+    width: 324px;
+    min-height: 340px;
+    padding: 29px 19px;
+
+    // border: 1px solid #0266c11a;
+  }
+
+  .adv__swiper .slide__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .adv__swiper .slide__description {
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: 15px;
+    //   align-items: center;
+    //   text-align: center;
+    :first-child {
+      font-size: 16px;
+
+      // line-height: 1;
+      // font-weight: 600;
+    }
+
+    :last-child {
+      font-size: 14px;
+      line-height: 22px;
+
+      // font-weight: 400;
+    }
+  }
+
+  .slide-gently .slide__description {
+    p:first-child {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (width >= 1440px) {
+  .adv {
+    // box-sizing: border-box;
+    padding: 100px 0;
+    width: 1440px;
+
+    // margin: 0 auto;
+  }
+
+  .adv__title {
+    // position: relative;
+    // min-height: 55px;
+    // text-align: center;
+    // color: var(--font-base);
+    h2 {
+      top: 3px;
+      left: 34%;
+    }
+
+    h3 {
+      margin: 3px 10px 0;
+    }
+  }
+
+  .adv__button {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .adv__button-prev,
+  .adv__button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 33px;
+
+    svg {
+      width: 13px;
+      height: 10px;
+    }
+  }
+
+  .adv__button-next {
+    transform: rotate(180deg);
+  }
+
+  .slide__icon {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // box-sizing: border-box;
+    width: 54px;
+    height: 54px;
+
+    // border: 1px solid var(--icon-additional);
+    // --icon-background: var(--icon-additional);
+    // svg {
+    //   width: 24px;
+    //   height: 24px;
+    // }
+  }
+
+  .adv .adv__swiper {
+    width: 1440px;
+    margin-top: 17px;
+
+    // margin-left: 15px;
+  }
+
+  .adv__swiper .swiper-wrapper {
+    // display: flex;
+    // flex-direction: row;
+    // // gap: 15px;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding-left: 220px;
+
+    // justify-content: center;
+  }
+
+  .adv__swiper .swiper-slide {
+    // box-sizing: border-box;
+    width: 380px;
+    min-height: 329px;
+    padding: 39px 19px;
+
+    // border: 1px solid #0266c11a;
+  }
+
+  .adv__swiper .slide__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .adv__swiper .slide__description {
+    //   display: flex;
+    //   flex-direction: column;
+    //   gap: 15px;
+    //   align-items: center;
+    //   text-align: center;
+    p:first-child {
+      font-size: 18px;
+
+      // line-height: 1;
+      // font-weight: 600;
+    }
+
+    p:last-child {
+      font-size: 14px;
+      line-height: 22px;
+
+      // font-weight: 400;
+    }
+  }
+
+  .slide-gently .slide__description {
+    p:first-child {
+      width: auto;
+    }
+  }
+}

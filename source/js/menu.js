@@ -10,13 +10,13 @@ export function toggleMenuState(navMain, menuOpen, menuClose, isOpen) {
 }
 
 export function initializeMenu() {
-  let navMain = document.querySelector(".menu-nav");
-  let menuOpen = navMain.querySelector(".menu-nav__open");
-  let menuClose = navMain.querySelector(".menu-nav__close");
+  const navMain = document.querySelector(".menu-nav");
+  const menuOpen = navMain.querySelector(".menu-nav__open");
+  const menuClose = navMain.querySelector(".menu-nav__close");
 
   navMain.classList.remove("menu-nav--nojs");
 
-  navMain.addEventListener("click", function (event) {
+  navMain.addEventListener("click", (event) => {
     if (event.target.closest(".menu-nav__open")) {
       toggleMenuState(navMain, menuOpen, menuClose, true);
     }

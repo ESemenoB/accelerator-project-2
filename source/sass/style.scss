@@ -2,10 +2,20 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-@import "block/fonts.scss";
-@import "block/variables.scss";
-@import "block/global.scss";
-@import "block/body.scss";
-@import "block/container.scss";
-@import "block/header.scss";
-@import "block/nav.scss";
+@import "block/variables";
+@import "block/fonts";
+@import "block/mixins";
+@import "block/global";
+@import "block/body";
+@import "block/container";
+@import "block/header";
+@import "block/nav";
+@import "block/hero";
+@import "block/tours";
+@import "block/training";
+@import "block/about";
+@import "block/reviews";
+@import "block/adv";
+@import "block/gallery";
+@import "block/form";
+@import "block/footer";

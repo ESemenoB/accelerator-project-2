@@ -1,0 +1,206 @@
+.form {
+  width: 320px;
+  min-height: 638px;
+  box-sizing: border-box;
+  padding: 174px 31px;
+  margin: 0 auto;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../img/form-desktop@x1.png");
+  background-size: 1374px 760px;
+  background-position: 57% 53%;
+  background-repeat: no-repeat;
+  color: var(--dark-background);
+}
+
+@media (resolution >= 2dppx) {
+  .form {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../img/form-desktop@x2.png");
+    background-size: 1374px 760px;
+    background-position: 57% 53%;
+    background-repeat: no-repeat;
+  }
+}
+
+.form__container {
+  width: 258px;
+  margin: 0 auto;
+  padding: 2px 0 0;
+}
+
+.form__container h3 {
+  text-align: center;
+  margin: 0 0 18px;
+
+  @include title-h3;
+}
+
+.form__container p {
+  text-align: center;
+  line-height: 18px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.form__container form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.form__container input {
+  box-sizing: border-box;
+  padding: 17px 15px 14px;
+  min-height: 50px;
+  border-radius: 2px;
+  background-color: var(--form-background);
+  border: 1px solid var(--form-border-opacity);
+}
+
+.form__container input::placeholder {
+  color: var(--form-input);
+  opacity: 50%;
+  font-weight: 400;
+}
+
+.form__container input:hover {
+  border: 1px solid var(--form-border-hover);
+}
+
+.form__container input:focus-visible {
+  outline: none;
+  border: 1px solid var(--form-border-focus);
+}
+
+.form__container .error {
+  outline: none;
+  border: 1px solid var(--form-error);
+}
+
+.form__container label {
+  display: none;
+}
+
+.form__button {
+  min-height: 58px;
+  background-color: var(--background-additional);
+  color: var(--dark-background);
+  font-weight: 500;
+  border: none;
+}
+
+@media screen and (width >= 768px) {
+  .form {
+    width: 768px;
+    min-height: 680px;
+    padding: 184.5px 0 0;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../img/form-desktop@x1.png");
+    background-size: 1466px 788px;
+    background-position: 61% 50%;
+    background-repeat: no-repeat;
+    color: var(--dark-background);
+  }
+
+  @media (resolution >= 2dppx) {
+    .form {
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../img/form-desktop@x2.png");
+      background-size: 1466px 788px;
+      background-position: 61% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .form__container {
+    width: 360px;
+  }
+
+  .form__container h3 {
+    margin: 0 0 22px;
+  }
+
+  .form__container p {
+    line-height: 24px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .form__container form {
+    margin-top: 25px;
+    gap: 11px;
+  }
+
+  .form__container input {
+    padding: 18px 29px 17.5px;
+  }
+
+  .form__button {
+    min-height: 56px;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  .form {
+    width: 1440px;
+    min-height: 760px;
+    padding: 295px 0 254px;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../img/form-desktop@x1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--dark-background);
+  }
+
+  @media (resolution >= 2dppx) {
+    .form {
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../img/form-desktop@x2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .form__container {
+    width: 1440px;
+  }
+
+  .form__container h3 {
+    margin: 0 0 16px;
+    line-height: 1;
+  }
+
+  .form__container p {
+    line-height: 24px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .form__container form {
+    width: 960px;
+    margin: 39px 240px;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .form__container input {
+    padding: 18px 29px 17.5px;
+    width: 360px;
+  }
+
+  .form__button {
+    width: 180px;
+    min-height: 56px;
+  }
+}

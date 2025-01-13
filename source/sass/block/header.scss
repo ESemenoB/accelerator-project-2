@@ -1,6 +1,7 @@
-header {
+.header {
   background-color: var(--background-additional);
-  padding: 15px 0;
+  padding: 15px 0 12.5px;
+
   //   left: 0;
   //   right: 0;
   //   position: absolute;
@@ -16,10 +17,12 @@ header {
   flex-direction: column;
   align-items: flex-end;
   gap: 13px;
+
   svg {
     width: 142px;
     height: 42px;
   }
+
   a {
     font-weight: 600;
     font-size: 14px;
@@ -28,10 +31,11 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
-  header {
+@media screen and (width >= 768px) {
+  .header {
     background-color: var(--background-additional);
-    padding: 20px 0 18px;
+    padding: 20px 0 17px;
+
     //   left: 0;
     //   right: 0;
     //   position: absolute;
@@ -49,23 +53,27 @@ header {
     align-items: center;
     gap: 128px;
     flex-direction: row;
-    svg {
-      width: 142px;
-      height: 42px;
-    }
+
+    // svg {
+    //   width: 142px;
+    //   height: 42px;
+    // }
+
     a {
       font-weight: 600;
       font-size: 16px;
       line-height: 1;
+
       //   color: var(--dark-background);
     }
   }
 }
 
-@media screen and (min-width: 1440px) {
-  header {
+@media screen and (width >= 1440px) {
+  .header {
     background-color: var(--background-additional);
     padding: 42px 0 39px;
+
     //   left: 0;
     //   right: 0;
     //   position: absolute;
@@ -80,21 +88,29 @@ header {
 
   .header__content {
     width: 1200px;
+
     /* display: flex
 ; */
+
     /* align-items: center; */
     gap: 0;
+
     /* flex-direction: row; */
     justify-content: space-between;
     margin-left: 32px;
-    svg {
-      width: 142px;
-      height: 42px;
-    }
+
+    // svg {
+    //   width: 142px;
+    //   height: 42px;
+    // }
+
     a {
+      display: block;
+      width: 157px;
       font-weight: 600;
       font-size: 18px;
       line-height: 1;
+
       //   color: var(--dark-background);
     }
   }
