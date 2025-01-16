@@ -1,8 +1,6 @@
 .about {
   color: var(--font-base);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+  @include text--regular;
   padding: 20px 0;
   background-image: url("../../img/about-background-tablet@x1.png");
   background-repeat: no-repeat;
@@ -10,7 +8,7 @@
   background-size: 621px auto;
 }
 
-@media (resolution >= 2dppx), (resolution >= 192dpi) {
+@media (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .about {
     background-image: url("../../img/about-background-tablet@x2.png");
     background-repeat: no-repeat;
@@ -22,33 +20,40 @@
 .about__title {
   position: relative;
   min-height: 55px;
+}
 
-  // h2 {
-  //   position: absolute;
-  // }
+.about__title h3 {
+  margin-top: 16px;
+}
 
-  h3 {
-    margin-top: 16px;
-  }
+.about__title p {
+  top: 3px;
 }
 
 .about__container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 25.5px;
   margin-top: 400px;
 }
 
 .about__container ul {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
 }
 
-.about__container ul li {
+.about__container li {
   display: flex;
-  gap: 15px;
+  gap: 14px;
   flex-direction: column;
+}
+
+.about__container li p {
+  margin: 0;
+  @include text--regular;
 }
 
 .about__container h5 {
@@ -57,8 +62,6 @@
 
 @media screen and (width >= 768px) {
   .about {
-    font-size: 16px;
-    line-height: 24px;
     padding: 42px 0;
     background-image: url("../../img/about-background-tablet@x1.png");
     background-repeat: no-repeat;
@@ -66,7 +69,7 @@
     background-size: 541px auto;
   }
 
-  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .about {
       background-image: url("../../img/about-background-tablet@x2.png");
       background-repeat: no-repeat;
@@ -77,49 +80,29 @@
 
   .about__title {
     justify-content: center;
+  }
 
-    // position: relative;
-    // min-height: 55px;
-
-    // h2 {
-    //   line-height: 0;
-    // }
-
-    h3 {
-      margin-top: 18px;
-    }
+  .about__title h3 {
+    margin-top: 18px;
   }
 
   .about__container {
-    // display: flex;
-    // flex-direction: column;
     gap: 36px;
     width: 270px;
-    margin-top: 0;
-    margin-left: 450px;
+    margin: 0 0 0 450px;
   }
 
   .about__container ul {
-    // display: flex;
-    // flex-direction: column;
     gap: 29px;
   }
 
-  .about__container ul li {
-    // display: flex;
+  .about__container li {
     gap: 11px;
-
-    // flex-direction: column;
   }
 }
 
 @media screen and (width >= 1440px) {
   .about {
-    // color: var(--font-base);
-    font-size: 14px;
-
-    // font-weight: 400;
-    line-height: 22px;
     padding: 100px 0 178px;
     background-image: url("../../img/about-background@x1.png");
     background-repeat: no-repeat;
@@ -127,7 +110,7 @@
     background-size: 660px auto;
   }
 
-  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .about {
       background-image: url("../../img/about-background@x2.png");
       background-repeat: no-repeat;
@@ -136,54 +119,30 @@
     }
   }
 
-  .about__title {
-    //   display: block;
-    // justify-content: center;
-    // position: relative;
-    // min-height: 55px;
+  .about__title p {
+    top: 6px;
+  }
 
-    // h2 {
-    //   position: absolute;
-    // }
-
-    h3 {
-      margin-top: 41px;
-      line-height: 47px;
-    }
+  .about__title h3 {
+    margin-top: 39px;
+    line-height: 47px;
   }
 
   .about__container {
-    // display: flex;
-    // flex-direction: column;
     gap: 53px;
     width: 585px;
-
-    // margin-top: 0;
     margin-left: 660px;
+  }
 
-    // ul {
-    //   li {
-    //   }
+  .about__container li:nth-child(1) {
+    width: 570px;
+  }
+  .about__container li {
+    gap: 16px;
+  }
 
-    //   // li:nth-child(1) {
-    //   //   width: 570px;
-    //   // }
-    // }
-    // .about__container ul {
-    //   // display: flex;
-    //   // flex-direction: column;
-    //   // gap: 29px;
-    // }
-
-    .about__container ul li {
-      // display: flex;
-      gap: 16px;
-
-      // flex-direction: column;
-
-      :nth-child(1) {
-        width: 570px;
-      }
-    }
+  .about__container li p {
+    margin: 0;
+    @include text--small;
   }
 }

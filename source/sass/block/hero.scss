@@ -4,19 +4,17 @@
 
 .hero .swiper-wrapper {
   width: 320px;
-
-  // position: relative;
 }
 
 .hero .swiper-slide {
   width: 320px;
-
-  // min-height: 568px;
-  // position: relative;
+  min-height: 568px;
 }
 
 .hero__swiper .slide__details {
   display: none;
+  margin: 0;
+  padding: 0;
 }
 
 .swiper-pagination {
@@ -50,8 +48,8 @@
 }
 
 .swiper-pagination-bullet-active {
-  opacity: 1; /* Активный буллет */
-  background-color: var(--background-base); /* Цвет активного буллета */
+  opacity: 1;
+  background-color: var(--background-base);
 }
 
 .swiper-slide-container {
@@ -59,87 +57,76 @@
   margin: 0 auto;
   color: var(--dark-background);
   text-align: center;
+}
 
-  h2 {
-    @include title-h2;
+.swiper-slide-container h2 {
+  @include title-h2;
+}
 
-    // margin-top: 145px;
-    // margin-bottom: 0;
-    // color: var(--dark-background);
-    // text-align: center;
-  }
+.swiper-slide-container p {
+  margin: 15px 0 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
 
-  p {
-    margin-top: 15px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  a {
-    margin-top: 60px;
-    margin-bottom: 134px;
-
-    @include buttons-regular;
-  }
+.swiper-slide-container a {
+  margin-top: 60px;
+  margin-bottom: 134px;
+  @include buttons-regular;
 }
 
 .slide--caucasus {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       112.1deg,
       rgba(15, 20, 41, 0.33) 17.23%,
       rgba(15, 20, 41, 0) 94.93%
     ),
     url("../../img/caucasus-mobile@x1.webp");
+}
 
-  h2 {
-    margin-top: 145px;
-    margin-bottom: 0;
-  }
+.slide--caucasus h2 {
+  margin-top: 145px;
+  margin-bottom: 0;
 }
 
 .slide--kamchatka {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       112.1deg,
       rgba(15, 20, 41, 0.33) 17.23%,
       rgba(15, 20, 41, 0) 94.93%
     ),
     url("../../img/kamchatka-mobile@x1.webp");
+}
 
-  h2 {
-    margin-top: 135px;
-    margin-bottom: 0;
-  }
+.slide--kamchatka h2 {
+  margin-top: 135px;
+  margin-bottom: 0;
 }
 
 .slide--altai {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       112.1deg,
       rgba(15, 20, 41, 0.33) 17.23%,
       rgba(15, 20, 41, 0) 94.93%
     ),
     url("../../img/altai-mobile@x1.webp");
-
-  h2 {
-    margin-top: 122px;
-    margin-bottom: 0;
-  }
 }
 
-/* Для экранов с высокой плотностью пикселей (ретина) */
-@media (resolution >= 2dppx), (resolution >= 192dpi) {
+.slide--altai h2 {
+  margin-top: 122px;
+  margin-bottom: 0;
+}
+
+@media (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .slide--caucasus {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -148,8 +135,7 @@
   }
 
   .slide--kamchatka {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -158,8 +144,7 @@
   }
 
   .slide--altai {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -169,154 +154,62 @@
 }
 
 @media screen and (width >= 768px) {
-  // .hero .hero__swiper {
-  //     // position: relative;
-  // }
   .hero .swiper-wrapper {
     width: 768px;
-
-    // position: relative;
   }
 
   .hero .swiper-slide {
     width: 768px;
-
-    // min-height: 1034px;
+    min-height: 1034px;
   }
-
-  //     }
-  //   }
-  // }
-
   .swiper-pagination {
-    // position: absolute;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    bottom: 40px;
-
-    /* left: 141px; */
-    // right: 0;
-    width: 100%;
     height: 20px;
-    text-align: center;
-    z-index: 6;
   }
 
-  // .swiper-pagination-bullet {
-  //   // display: block;
-  //   // border-radius: 50px;
-  //   // width: 18px;
-  //   // height: 18px;
-  //   // background-color: #000; /* Цвет буллетов */
-  //   border: 1px solid var(--background-base);
-
-  //   // opacity: 0.5;
-  // }
-
-  // .swiper-pagination-bullet:hover {
-  //   // display: block;
-  //   // border-radius: 50px;
-  //   // width: 14px;
-  //   // height: 14px;
-  //   background-color: var(--bullet-hover);
-  //   border: 1px solid var(--background-base);
-
-  //   // opacity: 0.5;
-  // }
-
-  // .swiper-pagination-bullet:active {
-  //   // display: block;
-  //   // border-radius: 50px;
-  //   // width: 14px;
-  //   // height: 14px;
-  //   background-color: rgb(255, 255, 255, 0.5);
-  //   border: 1px solid var(--background-base);
-
-  //   // opacity: 0.5;
-  // }
-
-  // .swiper-pagination-bullet-active {
-  //   opacity: 1; /* Активный буллет */
-  //   background-color: var(--background-base); /* Цвет активного буллета */
-  // }
+  .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+  }
 
   .swiper-slide-container {
     width: 678px;
+  }
+
+  .swiper-slide-container h2 {
+    @include title-h1;
+    margin-top: 342px;
+  }
+
+  .swiper-slide-container p {
+    width: 500px;
     margin: 0 auto;
-    color: var(--dark-background);
-    text-align: center;
+    padding: 15px 0 0;
+    font-size: 17px;
+    line-height: 24px;
+  }
 
-    h2 {
-      @include title-h1;
-
-      margin-top: 342px;
-
-      // color: var(--dark-background);
-      // text-align: center;
-    }
-
-    p {
-      width: 500px;
-      margin: 0 auto;
-      padding: 15px 0 0;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 24px;
-    }
-
-    a {
-      margin-top: 37px;
-    }
+  .swiper-slide-container a {
+    margin-top: 35px;
   }
 
   .slide--kamchatka {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
       ),
       url("../../img/kamchatka-tablet@x1.webp");
-
-    .swiper-slide-container {
-      // width: 678px;
-      // margin: 0 auto;
-      // color: var(--dark-background);
-      // text-align: center;
-
-      h2 {
-        margin-top: 137px;
-
-        // color: var(--dark-background);
-        // text-align: center;
-      }
-
-      // p {
-      //   width: 500px;
-      //   margin: 0 auto;
-      //   padding: 15px 0 0 0;
-      //   font-weight: 400;
-      //   font-size: 17px;
-      //   line-height: 24px;
-      // }
-
-      // a {
-      //   margin-top: 35px;
-      // }
-    }
   }
-
-  //   .slide--kamchatka {
-  // }
+  .slide--kamchatka h2 {
+    margin-top: 137px;
+  }
 
   .slide--caucasus {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -327,8 +220,7 @@
   .slide--altai {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -336,11 +228,9 @@
       url("../../img/altai-tablet@x1.webp");
   }
 
-  /* Для экранов с высокой плотностью пикселей (ретина) */
-  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .slide--caucasus {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           112.1deg,
           rgba(15, 20, 41, 0.33) 17.23%,
           rgba(15, 20, 41, 0) 94.93%
@@ -349,8 +239,7 @@
     }
 
     .slide--kamchatka {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           112.1deg,
           rgba(15, 20, 41, 0.33) 17.23%,
           rgba(15, 20, 41, 0) 94.93%
@@ -359,8 +248,7 @@
     }
 
     .slide--altai {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           112.1deg,
           rgba(15, 20, 41, 0.33) 17.23%,
           rgba(15, 20, 41, 0) 94.93%
@@ -371,144 +259,72 @@
 }
 
 @media screen and (width >= 1440px) {
-  // .hero .hero__swiper {
-  //     // position: relative;
-  //     }
   .hero .swiper-wrapper {
     width: 1440px;
-
-    // position: relative;
   }
 
   .hero .swiper-slide {
     width: 1440px;
-
-    // min-height: 800px;
+    min-height: 520px;
     padding: 200px 0 80px;
   }
 
-  //     }
-  //   }
-  // }
-
   .swiper-pagination {
-    // position: absolute;
-    // display: flex;
     justify-content: flex-end;
-
-    // gap: 20px;
     bottom: 92px;
-
-    /* left: 141px; */
     right: 120px;
-
-    // width: 100%;
-    // height: 16px;
-    // text-align: center;
-    // z-index: 6;
   }
 
-  .swiper-pagination-bullet {
-    // display: block;
-    // border-radius: 50px;
-    width: 18px;
-    height: 18px;
-
-    // background-color: #000; /* Цвет буллетов */
-    // border: 1px solid var(--background-base);
-    // opacity: 0.5;
-  }
-
-  // .swiper-pagination-bullet:hover {
-  //   // display: block;
-  //   // border-radius: 50px;
-  //   // width: 14px;
-  //   // height: 14px;
-  //   background-color: var(--bullet-hover);
-  //   border: 1px solid var(--background-base);
-  //   // opacity: 0.5;
-  // }
-
-  // .swiper-pagination-bullet:active {
-  //   // display: block;
-  //   // border-radius: 50px;
-  //   // width: 14px;
-  //   // height: 14px;
-  //   background-color: rgb(255, 255, 255, 0.5);
-  //   border: 1px solid var(--background-base);
-  //   // opacity: 0.5;
-  // }
-
-  // .swiper-pagination-bullet-active {
-  //   opacity: 1; /* Активный буллет */
-  //   background-color: var(--background-base); /* Цвет активного буллета */
+  // .swiper-pagination-bullet {
+  //   width: 18px;
+  //   height: 18px;
   // }
 
   .swiper-slide-container {
     width: 780px;
     margin: 0 120px;
-    color: var(--dark-background);
+    // color: var(--dark-background);
     text-align: left;
-
-    // padding: 200px 0 80px;
-
-    h2 {
-      margin: 0; // color: var(--dark-background);
-      // text-align: left;
-    }
-
-    p {
-      width: 420px;
-      margin: 0;
-      padding: 23px 0 0;
-
-      // font-weight: 400;
-      // font-size: 17px;
-      // line-height: 24px;
-    }
-
-    // a {
-    //   margin-top: 35px;
-    // }
   }
 
-  .slide--kamchatka,
-  .slide--altai {
-    .swiper-slide-container {
-      width: 925px;
+  .swiper-slide-container h2 {
+    margin: 0;
+  }
 
-      // margin: 0 auto;
-      // color: var(--dark-background);
-      // text-align: center;
+  .swiper-slide-container p {
+    width: 420px;
+    margin: 0;
+    padding: 23px 0 0;
+  }
 
-      h2 {
-        margin-top: 0;
+  .swiper-slide-container a {
+    margin-top: 37px;
+  }
 
-        //   color: var(--dark-background);
-        //   text-align: center;
-      }
+  .slide--kamchatka .swiper-slide-container,
+  .slide--altai .swiper-slide-container {
+    width: 925px;
+  }
 
-      p {
-        width: 465px;
+  .slide--kamchatka h2 {
+    margin-top: 0;
+  }
 
-        //   margin: 0 auto;
-        //   padding: 15px 0 0 0;
-        //   font-weight: 400;
-        //   font-size: 17px;
-        //   line-height: 24px;
-      }
+  .slide--altai h2 {
+    margin-top: 0;
+  }
 
-      // a {
-      //   margin-top: 35px;
-      // }
-    }
+  .slide--kamchatka p {
+    width: 465px;
+  }
+  .slide--altai p {
+    width: 465px;
   }
 
   .slide--caucasus {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -519,8 +335,7 @@
   .slide--kamchatka {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -531,8 +346,7 @@
   .slide--altai {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         112.1deg,
         rgba(15, 20, 41, 0.33) 17.23%,
         rgba(15, 20, 41, 0) 94.93%
@@ -540,11 +354,9 @@
       url("../../img/altai-desktop@x1.webp");
   }
 
-  /* Для экранов с высокой плотностью пикселей (ретина) */
-  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .slide--caucasus {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           112.1deg,
           rgba(15, 20, 41, 0.33) 17.23%,
           rgba(15, 20, 41, 0) 94.93%
@@ -553,8 +365,7 @@
     }
 
     .slide--kamchatka {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           112.1deg,
           rgba(15, 20, 41, 0.33) 17.23%,
           rgba(15, 20, 41, 0) 94.93%
@@ -563,8 +374,7 @@
     }
 
     .slide--altai {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           112.1deg,
           rgba(15, 20, 41, 0.33) 17.23%,
           rgba(15, 20, 41, 0) 94.93%
@@ -575,25 +385,15 @@
 
   .hero__swiper .slide__details {
     display: flex;
-
-    // position: absolute;
     gap: 10px;
-
-    // bottom: 80px;
-    // left: 120px;
     color: var(--dark-background);
-
-    // margin-bottom: 80px;
-
     @include text-xsmall;
+  }
 
-    li {
-      position: relative;
-
-      // line-height: 16px;
-      padding: 13px 18px 13px 40px;
-      border: 1px solid rgb(255, 255, 255, 0.5);
-    }
+  .slide__details li {
+    position: relative;
+    padding: 13px 18px 13px 40px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
   }
 
   .details__length::before {

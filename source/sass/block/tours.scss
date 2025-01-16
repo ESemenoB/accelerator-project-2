@@ -7,20 +7,9 @@
 .tours__title {
   position: relative;
   padding: 18px 0 17px;
-
-  // h3 {
-  //   @include title-h3;
-
-  //   // font-size: 22px;
-  //   // line-height: 1;
-  // }
-
-  //   margin-bottom: 25px;
-  .title__shadow {
-    // position: absolute;
-    // opacity: 3%;
-    top: 3px;
-  }
+}
+.tours__title p {
+  top: 3px;
 }
 
 .tours__swiper {
@@ -29,7 +18,7 @@
 
 .tours__swiper .swiper-slide {
   width: 290px;
-  height: 416px;
+  min-height: 416px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -48,11 +37,8 @@
 .tours__swiper .slide__info {
   display: flex;
   flex-wrap: wrap;
-
-  // gap: 5px;
   row-gap: 12px;
   justify-content: space-between;
-
   @include caption-medium;
 }
 
@@ -65,22 +51,21 @@
   background-color: var(--button-base);
 
   svg {
-    // width: 13px;
-    // height: 14px;
-
     --pin-locate-background: #ffffff;
   }
 }
 
+.slide__locate p {
+  margin: 0;
+}
 .tours__swiper .slide__length {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  margin: 0;
+  padding: 0;
 
   svg {
-    // width: 20px;
-    // height: 20px;
-
     --sun-background: #ffffff;
   }
 }
@@ -92,11 +77,15 @@
   gap: 12px;
 }
 
+.length__day p,
+.length__night p {
+  margin: 0;
+}
+
 .tours__swiper h4 {
+  @include titel-h4;
   font-size: 24px;
   line-height: 28px;
-
-  // overflow-wrap: break-word;
 }
 
 .tours__swiper .slide__line {
@@ -110,12 +99,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  // width: 100%;
-  // svg {
-  //   width: 16px;
-  //   height: 16px;
-  // }
+  margin: 0;
+  padding: 0;
 }
 
 .tours__swiper .slide__difficulty {
@@ -123,7 +108,6 @@
   flex-direction: column;
   gap: 4px;
   width: 84px;
-
   @include caption-light;
 }
 
@@ -151,8 +135,7 @@
 .slide--elbrus {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
@@ -163,8 +146,7 @@
 .slide--belukha {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
@@ -175,8 +157,7 @@
 .slide--adygea {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
@@ -187,8 +168,7 @@
 .slide--urals {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
+  background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
@@ -196,10 +176,9 @@
     url("../../img/urals-mobile@x1.webp");
 }
 
-@media (resolution >= 2dppx), (resolution >= 192dpi) {
+@media (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .slide--elbrus {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -208,8 +187,7 @@
   }
 
   .slide--belukha {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -218,8 +196,7 @@
   }
 
   .slide--adygea {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -228,8 +205,7 @@
   }
 
   .slide--urals {
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -246,18 +222,18 @@
   display: flex;
   align-items: center;
   gap: 10.5px;
-
-  /* justify-content: space-between; */
   letter-spacing: 0.04em;
-
   @include buttons-big;
 
   svg {
     width: 12px;
     height: 14px;
-
     --arrow-color: #2d383f;
   }
+}
+
+.tours__link p {
+  margin: 0;
 }
 
 .tours__button {
@@ -266,9 +242,6 @@
 
 @media screen and (width >= 768px) {
   .tours {
-    // width: 768px;
-    color: var(--font-base);
-    background-color: var(--background-base);
     padding: 40px 0;
   }
 
@@ -277,21 +250,11 @@
   }
 
   .tours__title {
-    position: relative;
     padding: 20px 0 10px;
-
-    //   h3 {
-    //     font-size: 22px;
-    //     line-height: 1;
-    //   }
-    //   margin-bottom: 25px;
   }
-
-  // .title__shadow {
-  //   position: absolute;
-  //   opacity: 3%;
-  //   top: 3px;
-  // }
+  .tours__title p {
+    top: 5px;
+  }
 
   .tours__swiper {
     margin-top: 25px;
@@ -299,111 +262,22 @@
 
   .tours__swiper .swiper-slide {
     width: 330px;
-    height: 416px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: var(--dark-background);
+    min-height: 416px;
   }
 
   .tours__swiper .slide__container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     width: 290px;
-    margin: 30px 20px;
   }
 
-  .tours__swiper .slide__info {
-    display: flex;
-    flex-wrap: wrap;
-
-    // gap: 5px;
-    row-gap: 12px;
-    justify-content: space-between;
-  }
-
-  .tours__swiper .slide__locate {
-    width: min-content;
-    display: flex;
-    align-items: center;
-    padding: 7px 12.5px 7px 14px;
-    gap: 7px;
-    background-color: var(--button-base);
-
-    svg {
-      width: 13px;
-      height: 14px;
-
-      --pin-locate-background: #ffffff;
-    }
-  }
-
-  .tours__swiper .slide__length {
-    display: flex;
-    gap: 14px;
-
-    svg {
-      width: 20px;
-      height: 20px;
-
-      --sun-background: #ffffff;
-    }
-
-    .tours__swiper .length__day,
-    .tours__swiper .length__night {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .tours__swiper h4 {
-      font-size: 24px;
-      line-height: 28px;
-    }
-
-    .tours__swiper .slide__line {
-      width: 80px;
-      height: 1px;
-      background-color: var(--background-base);
-      opacity: 20%;
-    }
-
-    .tours__swiper .slide__data {
-      display: flex;
-      justify-content: space-between;
-
-      svg {
-        width: 16px;
-        height: 16px;
-      }
-    }
-
-    .tours__swiper .slide__difficulty {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      width: 84px;
-    }
-
-    .tours__swiper .slide__stars {
-      display: flex;
-      gap: 1px;
-    }
-
-    .tours__swiper .slide__date,
-    .tours__swiper .slide__group {
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
+  .tours__swiper h4 {
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .slide--elbrus {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -414,8 +288,7 @@
   .slide--belukha {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -426,8 +299,7 @@
   .slide--adygea {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -438,8 +310,7 @@
   .slide--urals {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -447,10 +318,9 @@
       url("../../img/urals-tablet@x1.png");
   }
 
-  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .slide--elbrus {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -459,8 +329,7 @@
     }
 
     .slide--belukha {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -469,8 +338,7 @@
     }
 
     .slide--adygea {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -479,8 +347,7 @@
     }
 
     .slide--urals {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -497,14 +364,11 @@
     display: flex;
     align-items: center;
     gap: 10.5px;
-
-    /* justify-content: space-between; */
     letter-spacing: 0.04em;
 
     svg {
       width: 12px;
       height: 14px;
-
       --arrow-color: #2d383f;
     }
   }
@@ -522,13 +386,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 33px;
-
-    // svg {
-    //   width: 13px;
-    //   height: 10px;
-    // }
+    width: 37px;
+    height: 35px;
   }
 
   .tours__button-next {
@@ -538,144 +397,31 @@
 
 @media screen and (width >= 1440px) {
   .tours {
-    // width: 768px;
-    color: var(--font-base);
-    background-color: var(--background-base);
     padding: 100px 0;
   }
 
   .tours__title {
-    position: relative;
     padding: 0;
-
-    h3 {
-      // font-size: 22px;
-      line-height: 83px;
-    }
-
-    // margin-bottom: 25px;
   }
-
-  .title__shadow {
-    position: absolute;
-    opacity: 3%;
+  .tours__title h3 {
+    line-height: 83px;
+  }
+  .tours__title p {
     top: 6px;
   }
 
-  .tours__swiper {
-    margin-top: 25px;
-  }
-
-  .tours__swiper .swiper-slide {
-    width: 330px;
-    height: 416px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    color: var(--dark-background);
-  }
-
   .tours__swiper .slide__container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
     width: 340px;
-    margin: 30px 20px;
-  }
-
-  .tours__swiper .slide__info {
-    display: flex;
-    flex-wrap: wrap;
-
-    // gap: 5px;
-    row-gap: 12px;
-    justify-content: space-between;
-  }
-
-  .tours__swiper .slide__locate {
-    width: min-content;
-    display: flex;
-    align-items: center;
-    padding: 7px 12.5px 7px 14px;
-    gap: 7px;
-    background-color: var(--button-base);
-
-    svg {
-      width: 13px;
-      height: 14px;
-
-      --pin-locate-background: #ffffff;
-    }
-  }
-
-  .tours__swiper .slide__length {
-    display: flex;
-    gap: 14px;
-
-    svg {
-      width: 20px;
-      height: 20px;
-
-      --sun-background: #ffffff;
-    }
-  }
-
-  .tours__swiper .length__day,
-  .tours__swiper .length__night {
-    display: flex;
-    align-items: center;
-    gap: 12px;
   }
 
   .tours__swiper h4 {
     width: 300px;
-    font-size: 24px;
-    line-height: 28px;
   }
-
-  .tours__swiper .slide__line {
-    width: 80px;
-    height: 1px;
-    background-color: var(--background-base);
-    opacity: 20%;
-  }
-
-  .tours__swiper .slide__data {
-    display: flex;
-    justify-content: space-between;
-
-    svg {
-      width: 16px;
-      height: 16px;
-    }
-  }
-
-  .tours__swiper .slide__difficulty {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    width: 84px;
-  }
-
-  .tours__swiper .slide__stars {
-    display: flex;
-    gap: 1px;
-  }
-
-  .tours__swiper .slide__date,
-  .tours__swiper .slide__group {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-  }
-
-  // }
 
   .slide--elbrus {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -686,8 +432,7 @@
   .slide--belukha {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -698,8 +443,7 @@
   .slide--adygea {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -710,8 +454,7 @@
   .slide--urals {
     background-size: cover;
     background-position: center;
-    background-image:
-      linear-gradient(
+    background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
@@ -719,10 +462,9 @@
       url("../../img/urals-desctop@x1.png");
   }
 
-  @media (resolution >= 2dppx), (resolution >= 192dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .slide--elbrus {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -731,8 +473,7 @@
     }
 
     .slide--belukha {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -741,8 +482,7 @@
     }
 
     .slide--adygea {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -751,8 +491,7 @@
     }
 
     .slide--urals {
-      background-image:
-        linear-gradient(
+      background-image: linear-gradient(
           0deg,
           rgba(0, 0, 0, 0.6) 22.3%,
           rgba(0, 0, 0, 0) 60.32%
@@ -762,22 +501,6 @@
   }
 
   .tours__link {
-    width: 221px;
-    margin: 0 auto;
     margin-top: 53px;
-    padding: 10px 5px 10px 10px;
-    display: flex;
-    align-items: center;
-    gap: 10.5px;
-
-    /* justify-content: space-between; */
-    letter-spacing: 0.04em;
-
-    svg {
-      width: 12px;
-      height: 14px;
-
-      --arrow-color: #2d383f;
-    }
   }
 }

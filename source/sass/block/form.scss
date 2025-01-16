@@ -4,22 +4,20 @@
   box-sizing: border-box;
   padding: 174px 31px;
   margin: 0 auto;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../../img/form-desktop@x1.png");
-  background-size: 1374px 760px;
-  background-position: 57% 53%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../img/form-mobile@x1.png");
+  background-position: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   color: var(--dark-background);
 }
 
-@media (resolution >= 2dppx) {
+@media (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .form {
-    background:
-      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../../img/form-desktop@x2.png");
-    background-size: 1374px 760px;
-    background-position: 57% 53%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../img/form-mobile@x2.png");
+    background-position: 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 }
@@ -33,7 +31,6 @@
 .form__container h3 {
   text-align: center;
   margin: 0 0 18px;
-
   @include title-h3;
 }
 
@@ -42,12 +39,13 @@
   line-height: 18px;
   width: 220px;
   margin: 0 auto;
+  padding: 18px 0;
 }
 
 .form__container form {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 2px;
   gap: 8px;
   font-size: 16px;
   line-height: 16px;
@@ -55,11 +53,10 @@
 
 .form__container input {
   box-sizing: border-box;
-  padding: 17px 15px 14px;
-  min-height: 50px;
+  padding: 16px 15px 15.5px;
   border-radius: 2px;
   background-color: var(--form-background);
-  border: 1px solid var(--form-border-opacity);
+  border: none;
 }
 
 .form__container input::placeholder {
@@ -69,17 +66,17 @@
 }
 
 .form__container input:hover {
-  border: 1px solid var(--form-border-hover);
+  box-shadow: inset 0px 0px 0px 1px var(--form-border-hover);
 }
 
 .form__container input:focus-visible {
   outline: none;
-  border: 1px solid var(--form-border-focus);
+  box-shadow: inset 0px 0px 0px 1px var(--form-border-hover);
 }
 
 .form__container .error {
   outline: none;
-  border: 1px solid var(--form-error);
+  box-shadow: inset 0px 0px 0px 1px var(--form-error);
 }
 
 .form__container label {
@@ -99,22 +96,20 @@
     width: 768px;
     min-height: 680px;
     padding: 184.5px 0 0;
-    background:
-      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../../img/form-desktop@x1.png");
-    background-size: 1466px 788px;
-    background-position: 61% 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../img/form-tablet@x1.png");
+    background-position: 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     color: var(--dark-background);
   }
 
-  @media (resolution >= 2dppx) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .form {
-      background:
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../../img/form-desktop@x2.png");
-      background-size: 1466px 788px;
-      background-position: 61% 50%;
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url("../../img/form-tablet@x2.png");
+      background-position: 100%;
+      background-size: 100%;
       background-repeat: no-repeat;
     }
   }
@@ -131,6 +126,7 @@
     line-height: 24px;
     font-size: 16px;
     width: 100%;
+    padding: 0;
   }
 
   .form__container form {
@@ -139,7 +135,7 @@
   }
 
   .form__container input {
-    padding: 18px 29px 17.5px;
+    padding: 18px 29px 19.5px;
   }
 
   .form__button {
@@ -152,8 +148,7 @@
     width: 1440px;
     min-height: 760px;
     padding: 295px 0 254px;
-    background:
-      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url("../../img/form-desktop@x1.png");
     background-size: cover;
     background-position: center;
@@ -161,10 +156,9 @@
     color: var(--dark-background);
   }
 
-  @media (resolution >= 2dppx) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .form {
-      background:
-        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url("../../img/form-desktop@x2.png");
       background-size: cover;
       background-position: center;
@@ -179,12 +173,6 @@
   .form__container h3 {
     margin: 0 0 16px;
     line-height: 1;
-  }
-
-  .form__container p {
-    line-height: 24px;
-    font-size: 16px;
-    width: 100%;
   }
 
   .form__container form {

@@ -4,36 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ищете, где отдохнуть? Мы предлагаем лучшие туры и путешествия: пляжный отдых, экскурсии, круизы. Совершите путешествие своей мечты с нами!">
+
+
   <title>Lifetour</title>
   <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page-body">
   <header class="header" data-test="header">
-    <div class="header__container container">
-      <nav class="header__menu menu-nav menu-nav--closed menu-nav--nojs">
-        <button class="menu-nav__toggle menu-nav__open button__active" type="button">
+    <div class="header__container">
+      <nav class="menu-nav menu-nav--nojs">
+        <button class="menu-nav__open button" aria-label="Открыть меню">
           <svg width="26" height="26">
             <use href="/__spritemap#sprite-menu"></use>
           </svg>
-          <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="menu-nav__toggle menu-nav__close button__hidden" type="button">
+        <button class="menu-nav__close button button__hidden" aria-label="Закрыть меню">
           <svg width="26" height="26">
             <use href="/__spritemap#sprite-cross"></use>
           </svg>
-          <span class="visually-hidden">Закрыть меню</span>
         </button>
-        <div class="menu menu--wrapper">
-          <ul class="menu__list">
-            <li class="menu__element"><a class="menu__item " href="#tour">Туры</a></li>
-            <li class="menu__element"><a class="menu__item " href="#training">Обучение</a></li>
-            <li class="menu__element"><a class="menu__item " href="#about">О нас</a></li>
-            <li class="menu__element"><a class="menu__item " href="#reviews">Отзывы</a></li>
-            <li class="menu__element"><a class="menu__item " href="#gallery">Фотографии</a></li>
-            <li class="menu__element"><a class="menu__item " href="#footer">Контакты</a></li>
-          </ul>
-        </div>
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a class="menu__item" aria-label="Перейти в раздел все туры" href="#tour">Туры</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu__item" aria-label="Перейти в раздел обучение" href="#training">Обучение</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu__item" aria-label="Перейти в раздел о НАС" href="#about">О нас</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu__item" aria-label="Перейти в отзывыр" href="#reviews">Отзывы</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu__item" aria-label="Перейти в раздел фотографии" href="#gallery">Фотографии</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu__item" aria-label="Перейти в контакты" href="#footer">Контакты</a>
+          </li>
+
+        </ul>
       </nav>
       <ul class="header__content">
         <li class="header__item">
@@ -42,7 +55,7 @@
           </svg>
         </li>
         <li class="header__item item">
-          <a class="item__tel" href="tel:8-800-000-00-00">8 800 000-00-00</a>
+          <a class="item__tel" aria-label="Телефон для справок" href="tel:8-800-000-00-00">8 800 000-00-00</a>
         </li>
       </ul>
     </div>
@@ -58,7 +71,7 @@
               вы пройдёте через потрясающие
               ландшафты и совершите восход
               на вершину горы Чегет.</p>
-            <a class="button-link button-small" href="#tour">Смотреть тур</a>
+            <a class="button-link button-small" aria-label="Смотреть тур" href="#tour">Смотреть тур</a>
             <ul class="slide__details details">
               <li class="details__length">6 дней/5 ночей</li>
               <li class="details__level">Высокая сложность</li>
@@ -70,7 +83,7 @@
             <h2>Невероятная природа Камчатки</h2>
             <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
               уголков дикой природы&nbsp;в мире.</p>
-            <a class="button-link button-small" href="/">Смотреть тур</a>
+            <a class="button-link button-small" aria-label="Смотреть тур" href="#tour">Смотреть тур</a>
             <ul class="slide__details details">
               <li class="details__length">9 дней/10 ночей</li>
               <li class="details__level">Средняя сложность</li>
@@ -83,7 +96,7 @@
             <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
               дух ландшафтов
               Алтайских гор.</p>
-            <a class="button-link button-small" href="/">Смотреть тур</a>
+            <a class="button-link button-small" aria-label="Смотреть тур" href="#tour">Смотреть тур</a>
             <ul class="slide__details details">
               <li class="details__length">8 дней/7 ночей</li>
               <li class="details__level">Лёгкая сложность</li>
@@ -97,7 +110,7 @@
   <section class="tours" id="tour" data-test="tours">
     <div class="tours__container container">
       <div class="tours__title titel-shadow">
-        <h2>Ближайшие туры</h2>
+        <p aria-hidden="true">Ближайшие туры</p>
         <h3>Ближайшие туры</h3>
       </div>
       <div class="tours__swiper swiper">
@@ -336,20 +349,20 @@
           </div>
         </div>
       </div>
-      <div class="tours__button ">
-        <div class="tours__button-prev swiper-button-prev">
+      <div class="tours__button">
+        <button class="tours__button-prev swiper-button-prev" aria-label="Предыдущий слайд">
           <svg width="13" height="10">
             <use href="/__spritemap#sprite-button-arrow"></use>
           </svg>
-        </div>
-        <div class="tours__button-next swiper-button-next">
+        </button>
+        <button class="tours__button-next swiper-button-next" aria-label="Следующий слайд">
           <svg width="13" height="10">
             <use href="/__spritemap#sprite-button-arrow"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
-    <a class="tours__link link" href="/">
+    <a class="tours__link link" aria-label="Ссылка на страничку Все туры" href="">
       <p>Показать все туры</p>
       <svg width="12" height="14">
         <use href="/__spritemap#sprite-arrow"></use>
@@ -359,7 +372,7 @@
   <section class="training" id="training" data-test="training">
     <div class="training__container container">
       <div class="training__title titel-shadow">
-        <h2>Обучение</h2>
+        <p aria-hidden="true">Обучение</p>
         <h3>Обучение</h3>
       </div>
       <span>Обучение проводится квалифицированными специалистами, за плечами&nbsp;которых десятки пройденных маршрутов
@@ -374,8 +387,7 @@
               <div>
                 <span>Александр Прокофьев</span>
                 <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
-                <a class="slide__link" href="https://vk.com">
-                  <p class="visually-hidden">Ссылка на страничку тренера В Контакте</p>
+                <a class="slide__link" aria-label="Ссылка на страничку тренера В Контакте" href="https://vk.com">
                   <svg width="16" height="9">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
@@ -391,8 +403,7 @@
                 <span>Светлана Афиногенова</span>
                 <p>Видеть мир вокруг, познавать его опасности, находить друг друга,
                   становиться ближе, чувствовать — в этом назначение жизни.</p>
-                <a class="slide__link" href="https://vk.com">
-                  <p class="visually-hidden">Ссылка на страничку тренера В Контакте</p>
+                <a class="slide__link" aria-label="Ссылка на страничку тренера В Контакте" href="https://vk.com">
                   <svg width="16" height="9">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
@@ -408,8 +419,7 @@
                 <span>Надежда Колесниченко</span>
                 <p>Участники говорят, что Надежда ответственная, приятная в общении,
                   и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
-                <a class="slide__link" href="https://vk.com">
-                  <p class="visually-hidden">Ссылка на страничку тренера В Контакте</p>
+                <a class="slide__link" aria-label="Ссылка на страничку тренера В Контакте" href="https://vk.com">
                   <svg width="16" height="9">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
@@ -426,8 +436,7 @@
                 <span>Федор Кайгородов</span>
                 <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
                   путешествует по Европе.</p>
-                <a class="slide__link" href="https://vk.com">
-                  <p class="visually-hidden">Ссылка на страничку тренера В Контакте</p>
+                <a class="slide__link" aria-label="Ссылка на страничку тренера В Контакте" href="https://vk.com">
                   <svg width="16" height="9">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
@@ -442,8 +451,7 @@
               <div>
                 <span>Даниэль Васнецов</span>
                 <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
-                <a class="slide__link" href="https://vk.com">
-                  <p class="visually-hidden">Ссылка на страничку тренера В Контакте</p>
+                <a class="slide__link" aria-label="Ссылка на страничку тренера В Контакте" href="https://vk.com">
                   <svg width="16" height="9">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
@@ -453,16 +461,16 @@
           </div>
         </div>
         <div class="training__button">
-          <div class="training__button-prev swiper-button-prev">
+          <button class="training__button-prev swiper-button-prev" aria-label="Предыдущий слайд">
             <svg width="13" height="10">
               <use href="/__spritemap#sprite-button-arrow"></use>
             </svg>
-          </div>
-          <div class="training__button-next swiper-button-next">
+          </button>
+          <button class="training__button-next swiper-button-next" aria-label="Следующий слайд">
             <svg width="13" height="10">
               <use href="/__spritemap#sprite-button-arrow"></use>
             </svg>
-          </div>
+          </button>
         </div>
       </div>
       <div class="training__process">
@@ -499,7 +507,7 @@
   <section class="about" id="about" data-test="about">
     <div class="about__container container">
       <div class="about__title titel-shadow">
-        <h2>О нас</h2>
+        <p aria-hidden="true">О нас</p>
         <h3>О нас</h3>
       </div>
       <ul>
@@ -521,7 +529,7 @@
   <section class="reviews" id="reviews" data-test="reviews">
     <div class="reviews__container container">
       <div class="reviews__title titel-shadow">
-        <h2>Отзывы</h2>
+        <p aria-hidden="true">Отзывы</p>
         <h3>Отзывы</h3>
       </div>
     </div>
@@ -616,7 +624,7 @@
               <ul>
                 <li>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда
                   наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.</li>
-                <li>СУ нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
+                <li>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе
                   у костра и пели песни. Обязательно повторю такое приключение!</li>
               </ul>
               <div class="slide__name">
@@ -624,27 +632,26 @@
                 <p>37 лет, Тюмень</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
     <div class="reviews__button">
-      <div class="reviews__button-prev swiper-button-prev">
+      <button class="reviews__button-prev swiper-button-prev" aria-label="Предыдущий слайд">
         <svg width="13" height="10">
           <use href="/__spritemap#sprite-button-arrow"></use>
         </svg>
-      </div>
-      <div class="reviews__button-next swiper-button-next">
+      </button>
+      <button class="reviews__button-next swiper-button-next" aria-label="Следующий слайд">
         <svg width="13" height="10">
           <use href="/__spritemap#sprite-button-arrow"></use>
         </svg>
-      </div>
+      </button>
     </div>
   </section>
   <section class="adv" data-test="adv">
     <div class="adv__title titel-shadow">
-      <h2>Преимущества</h2>
+      <p aria-hidden="true">Преимущества</p>
       <h3>Преимущества</h3>
     </div>
     <div class="adv__swiper swiper">
@@ -674,8 +681,8 @@
             <div class="slide__description">
               <p>Экспертиза и знания</p>
               <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
-                Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом
-                без опасений.
+                <span class="nowrap">Это гарантирует</span>
+                что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
               </p>
             </div>
           </div>
@@ -720,7 +727,7 @@
               </svg>
             </div>
             <div class="slide__description">
-              <p>Бережное отношение к природе</p>
+              <p> Бережное отношение к природе</p>
               <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное
                 воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
               </p>
@@ -730,37 +737,37 @@
       </div>
     </div>
     <div class="adv__button">
-      <div class="adv__button-prev swiper-button-prev">
+      <button class="adv__button-prev swiper-button-prev" aria-label="Предыдущий слайд">
         <svg width="13" height="10">
           <use href="/__spritemap#sprite-button-arrow"></use>
         </svg>
-      </div>
-      <div class="adv__button-next swiper-button-next">
+      </button>
+      <button class="adv__button-next swiper-button-next" aria-label="Следующий слайд">
         <svg width="13" height="10">
           <use href="/__spritemap#sprite-button-arrow"></use>
         </svg>
-      </div>
+      </button>
     </div>
   </section>
   <section class="gallery" id="gallery" data-test="gallery">
     <div class="gallery__container container">
       <div class="gallery__title titel-shadow">
-        <h2>Фотогалерея</h2>
+        <p aria-hidden="true">Фотогалерея</p>
         <h3>Фотогалерея</h3>
       </div>
       <span>Добавляйте фото с хэштегом #лайфтур, а также&nbsp;отмечайте нас на фото. Лучшие фотографии украсят этот
         раздел нашего сайта.</span>
       <div class="gallery__button">
-        <div class="gallery__button-prev swiper-button-prev">
+        <button class="gallery__button-prev swiper-button-prev" aria-label="Предыдущий слайд">
           <svg width="13" height="10">
             <use href="/__spritemap#sprite-button-arrow"></use>
           </svg>
-        </div>
-        <div class="gallery__button-next swiper-button-next">
+        </button>
+        <button class="gallery__button-next swiper-button-next" aria-label="Следующий слайд">
           <svg width="13" height="10">
             <use href="/__spritemap#sprite-button-arrow"></use>
           </svg>
-        </div>
+        </button>
       </div>
     </div>
     <div class="gallery__swiper swiper">
@@ -852,7 +859,7 @@
     <div class="footer__container">
       <div class="footer__text">
         <div class="footer__title titel-shadow">
-          <h2>Контакты</h2>
+          <p aria-hidden="true">Контакты</p>
           <h3>Контакты</h3>
         </div>
         <span>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
@@ -860,12 +867,12 @@
         <ul class="footer__list">
           <li class="footer__item item-tel">
             <h6>Телефон</h6>
-            <a href="tel:+79837454545">+7 983 745-45-45
+            <a aria-label="Позвонить нам в офис" href="tel:+79837454545">+7 983 745-45-45
             </a>
           </li>
           <li class="footer__item item-mail">
             <h6>Email</h6>
-            <a href="mailto:info@lifetour.com">info@lifetour.com
+            <a aria-label="Написать письмо нам на почту" href="mailto:info@lifetour.com">info@lifetour.com
             </a>
           </li>
           <li class="footer__item item-map">
@@ -889,49 +896,55 @@
     <div class="footer__link">
       <div class="footer__line"></div>
       <div class="footer-nav">
-        <a class="footer-logo" href="index.html">
-          <p class="visually-hidden">Ссылка на наш сайт</p>
+        <a class="footer-logo" aria-label="Ссылка на наш сайт" href="index.html">
           <svg width="142" height="42">
             <use href="/__spritemap#sprite-logotype"></use>
           </svg>
         </a>
         <ul class="footer__nav-list list">
-          <li class="footer-tour"><a class="footer__nav-link " href="#tour">Туры</a></li>
-          <li class="footer-training"><a class="footer__nav-link " href="#training">Обучение</a></li>
-          <li class="footer-about"><a class="footer__nav-link " href="#about">О нас</a></li>
-          <li class="footer-reviews"><a class="footer__nav-link " href="#reviews">Отзывы</a></li>
-          <li class="footer-gallery"><a class="footer__nav-link " href="#gallery">Фотографии</a></li>
-          <li class="footer-contacts"><a class="footer__nav-link " href="#footer">Контакты</a></li>
+          <li class="footer-tour"><a class="footer__nav-link" aria-label="Перейти в раздел все туры"
+              href="#tour">Туры</a></li>
+          <li class="footer-training"><a class="footer__nav-link" aria-label="Перейти в раздел обучение"
+              href="#training">Обучение</a></li>
+          <li class="footer-about"><a class="footer__nav-link" aria-label="Перейти в раздел о НАС"
+              href="#about">О нас</a></li>
+          <li class="footer-reviews"><a class="footer__nav-link" aria-label="Перейти в отзывыр"
+              href="#reviews">Отзывы</a></li>
+          <li class="footer-gallery"><a class="footer__nav-link" aria-label="Перейти в раздел фотографии"
+              href="#gallery">Фотографии</a></li>
+          <li class="footer-contacts"><a class="footer__nav-link" aria-label="Перейти в контакты"
+              href="#footer">Контакты</a></li>
         </ul>
-        <a class="footer__tel " href="tel:8800725-32-32">8 800 725-32-32</a>
+        <a class="footer__tel" aria-label="Позвонить нам по телефонц" href="tel:8800725-32-32">8 800 725-32-32</a>
       </div>
       <ul class="footer__social-list">
         <li class="footer-item item-vk">
-          <a class="social-link" href="https://vk.com/" target="_blank" rel="noopener noreferrer">
-            <p class="visually-hidden">Ссылка на нашу страничку В Контакте</p>
+          <a class="social-link" aria-label="Ссылка на нашу страничку ВКонтакте" href="https://vk.com/" target="_blank"
+            rel="noopener noreferrer">
             <svg width="16" height="9">
               <use href="/__spritemap#sprite-vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer-item item-ok ">
-          <a class="social-link" href="https://ok.ru/" target="_blank" rel="noopener noreferrer">
-            <p class="visually-hidden">Ссылка на нашу страничку одноклассники</p>
+          <a class="social-link" aria-label="Ссылка на нашу страничку одноклассники" href="https://ok.ru/"
+            target="_blank" rel="noopener noreferrer">
             <svg width="9" height="16">
               <use href="/__spritemap#sprite-ok"></use>
             </svg>
           </a>
         </li>
         <li class="footer-item item-reddit">
-          <a class="social-link" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">
-            <p class="visually-hidden">Ссылка на нашу страничку reddit</p>
+          <a class="social-link" aria-label="Ссылка на нашу страничку reddit" href="https://www.reddit.com/"
+            target="_blank" rel="noopener noreferrer">
             <svg width="14" height="15">
               <use href="/__spritemap#sprite-reddit"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <a class="footer-privacy link" href="/">Политика конфиденциальности</a>
+      <a class="footer-privacy link" aria-label="Прочитать политику конфиденциальности" href="/">Политика
+        конфиденциальности</a>
     </div>
   </footer>
   <script type="module" src="js/main.js"></script>

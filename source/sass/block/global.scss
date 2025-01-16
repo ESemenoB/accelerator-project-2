@@ -1,18 +1,18 @@
 .titel-shadow {
   overflow-wrap: break-word;
   position: relative;
+}
 
-  h2 {
-    @include title-h2;
+.titel-shadow p {
+  @include title-h2;
+  position: absolute;
+  opacity: 3%;
+  width: fill-available;
+  margin: 0;
+}
 
-    position: absolute;
-    opacity: 3%;
-    width: fill-available;
-  }
-
-  h3 {
-    @include title-h3;
-  }
+.titel-shadow h3 {
+  @include title-h3;
 }
 
 .text--big {
@@ -26,30 +26,6 @@
   }
 }
 
-.text--regular {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-
-  @media screen and (width >= 768px) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-.text--small {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-
-  @media screen and (width >= 768px) {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
 .caption--small {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -58,17 +34,6 @@
 
   @media screen and (width >= 1440px) {
     line-height: 100px;
-  }
-}
-
-.inputs--nav {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-
-  @media screen and (width >= 1440px) {
-    font-size: 16px;
   }
 }
 
@@ -92,21 +57,6 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
 }
 
 .button-small {
@@ -358,4 +308,8 @@ a {
 
 .menu__item:active::before {
   border: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

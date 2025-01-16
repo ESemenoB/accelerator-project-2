@@ -1,10 +1,6 @@
 .header {
   background-color: var(--background-additional);
   padding: 15px 0 12.5px;
-
-  //   left: 0;
-  //   right: 0;
-  //   position: absolute;
 }
 
 .header__container {
@@ -17,101 +13,66 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 13px;
+  margin: 0 0 0 163px;
+  padding: 0;
+  z-index: 3;
 
   svg {
     width: 142px;
     height: 42px;
   }
+}
 
-  a {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1;
-    color: var(--dark-background);
-  }
+.header__content a {
+  font-size: 18px;
+  @include titel-h6;
+  color: var(--dark-background);
 }
 
 @media screen and (width >= 768px) {
   .header {
-    background-color: var(--background-additional);
     padding: 20px 0 17px;
-
-    //   left: 0;
-    //   right: 0;
-    //   position: absolute;
   }
 
   .header__container {
-    display: flex;
     justify-content: normal;
     align-items: center;
     gap: 242px;
+    position: relative;
   }
 
   .header__content {
-    display: flex;
     align-items: center;
-    gap: 128px;
+    gap: 129px;
     flex-direction: row;
+    margin: 0 0 0 313px;
+  }
 
-    // svg {
-    //   width: 142px;
-    //   height: 42px;
-    // }
-
-    a {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 1;
-
-      //   color: var(--dark-background);
-    }
+  .header__content a {
+    font-size: 16px;
   }
 }
 
 @media screen and (width >= 1440px) {
   .header {
-    background-color: var(--background-additional);
-    padding: 42px 0 39px;
-
-    //   left: 0;
-    //   right: 0;
-    //   position: absolute;
+    padding: 42px 120px 39px;
   }
 
   .header__container {
-    display: flex;
-    justify-content: normal;
-    align-items: center;
     gap: 0;
   }
 
   .header__content {
     width: 1200px;
-
-    /* display: flex
-; */
-
-    /* align-items: center; */
     gap: 0;
-
-    /* flex-direction: row; */
     justify-content: space-between;
     margin-left: 32px;
+    margin: 0px 0 0 32px;
+  }
 
-    // svg {
-    //   width: 142px;
-    //   height: 42px;
-    // }
-
-    a {
-      display: block;
-      width: 157px;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 1;
-
-      //   color: var(--dark-background);
-    }
+  .header__content a {
+    display: block;
+    width: 157px;
+    font-size: 18px;
   }
 }

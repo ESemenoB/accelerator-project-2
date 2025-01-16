@@ -33,6 +33,7 @@
   font-weight: 800;
   font-size: 22px;
   line-height: 1;
+  margin: 0;
 
   @media screen and (width >= 768px) {
     font-size: 25px;
@@ -49,6 +50,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
 
   @media screen and (width >= 768px) {
     font-size: 24px;
@@ -61,6 +63,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
+  margin: 0;
 
   @media screen and (width >= 768px) {
     font-size: 18px;
@@ -76,6 +79,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1;
+  margin: 0;
 
   @media screen and (width >= 768px) {
     font-size: 16px;
@@ -149,4 +153,39 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+}
+
+@mixin inputs--nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+
+  @media screen and (width >= 1440px) {
+    font-size: 16px;
+  }
+}
+
+@mixin text--regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media screen and (width >= 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@mixin text--small {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media screen and (width >= 768px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
