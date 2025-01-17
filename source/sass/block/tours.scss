@@ -140,7 +140,7 @@
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
     ),
-    url("/img/elbrus-mobile@x1.webp");
+    url("/img/elbrus-mobile@x1.png");
 }
 
 .slide--belukha {
@@ -151,7 +151,7 @@
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
     ),
-    url("/img/belukha-mobile@x1.webp");
+    url("/img/belukha-mobile@x1.png");
 }
 
 .slide--adygea {
@@ -162,7 +162,7 @@
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
     ),
-    url("/img/adygea-mobile@x1.webp");
+    url("/img/adygea-mobile@x1.png");
 }
 
 .slide--urals {
@@ -173,7 +173,7 @@
       rgba(0, 0, 0, 0.6) 22.3%,
       rgba(0, 0, 0, 0) 60.32%
     ),
-    url("/img/urals-mobile@x1.webp");
+    url("/img/urals-mobile@x1.png");
 }
 
 @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
@@ -183,7 +183,7 @@
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
       ),
-      url("/img/elbrus-mobile@x2.webp");
+      url("/img/elbrus-mobile@x2.png");
   }
 
   .slide--belukha {
@@ -192,7 +192,7 @@
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
       ),
-      url("/img/belukha-mobile@x2.webp");
+      url("/img/belukha-mobile@x2.png");
   }
 
   .slide--adygea {
@@ -201,7 +201,7 @@
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
       ),
-      url("/img/adygea-mobile@x2.webp");
+      url("/img/adygea-mobile@x2.png");
   }
 
   .slide--urals {
@@ -210,7 +210,7 @@
         rgba(0, 0, 0, 0.6) 22.3%,
         rgba(0, 0, 0, 0) 60.32%
       ),
-      url("/img/urals-mobile@x2.webp");
+      url("/img/urals-mobile@x2.png");
   }
 }
 
@@ -257,7 +257,7 @@
   }
 
   .tours__swiper {
-    margin-top: 25px;
+    margin-top: 27px;
   }
 
   .tours__swiper .swiper-slide {
@@ -404,7 +404,7 @@
     padding: 0;
   }
   .tours__title h3 {
-    line-height: 83px;
+    line-height: 81px;
   }
   .tours__title p {
     top: 6px;
