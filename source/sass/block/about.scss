@@ -2,7 +2,7 @@
   color: var(--font-base);
   @include text--regular;
   padding: 20px 0;
-  background-image: url("../../img/about-background-tablet@x1.png");
+  background-image: url("/img/about-background-tablet@x1.png");
   background-repeat: no-repeat;
   background-position: -64px -45px;
   background-size: 621px auto;
@@ -10,7 +10,7 @@
 
 @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .about {
-    background-image: url("../../img/about-background-tablet@x2.png");
+    background-image: url("/img/about-background-tablet@x2.png");
     background-repeat: no-repeat;
     background-position: -64px -45px;
     background-size: 621px auto;
@@ -63,7 +63,7 @@
 @media screen and (width >= 768px) {
   .about {
     padding: 42px 0;
-    background-image: url("../../img/about-background-tablet@x1.png");
+    background-image: url("/img/about-background-tablet@x1.png");
     background-repeat: no-repeat;
     background-position: 0 175px;
     background-size: 541px auto;
@@ -71,7 +71,7 @@
 
   @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .about {
-      background-image: url("../../img/about-background-tablet@x2.png");
+      background-image: url("/img/about-background-tablet@x2.png");
       background-repeat: no-repeat;
       background-position: 0 175px;
       background-size: 541px auto;
@@ -104,7 +104,7 @@
 @media screen and (width >= 1440px) {
   .about {
     padding: 100px 0 178px;
-    background-image: url("../../img/about-background@x1.png");
+    background-image: url("/img/about-background@x1.png");
     background-repeat: no-repeat;
     background-position: 0 102px;
     background-size: 660px auto;
@@ -112,7 +112,7 @@
 
   @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .about {
-      background-image: url("../../img/about-background@x2.png");
+      background-image: url("/img/about-background@x2.png");
       background-repeat: no-repeat;
       background-position: 0 102px;
       background-size: 660px auto;

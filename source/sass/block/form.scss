@@ -5,7 +5,7 @@
   padding: 174px 31px;
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../../img/form-mobile@x1.png");
+    url("/img/form-mobile@x1.png");
   background-position: 100%;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .form {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../../img/form-mobile@x2.png");
+      url("/img/form-mobile@x2.png");
     background-position: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@
     min-height: 680px;
     padding: 184.5px 0 0;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../../img/form-tablet@x1.png");
+      url("/img/form-tablet@x1.png");
     background-position: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@
   @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .form {
       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../../img/form-tablet@x2.png");
+        url("/img/form-tablet@x2.png");
       background-position: 100%;
       background-size: 100%;
       background-repeat: no-repeat;
@@ -149,7 +149,7 @@
     min-height: 760px;
     padding: 295px 0 254px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url("../../img/form-desktop@x1.png");
+      url("/img/form-desktop@x1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,7 +159,7 @@
   @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     .form {
       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url("../../img/form-desktop@x2.png");
+        url("/img/form-desktop@x2.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
