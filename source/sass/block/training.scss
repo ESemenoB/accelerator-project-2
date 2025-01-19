@@ -1,6 +1,5 @@
 .training {
   padding: 20px 0;
-  background-color: var(--background-base);
   color: var(--font-base);
 }
 
@@ -37,6 +36,7 @@
   width: 290px;
   min-height: 356px;
   border: 1px solid var(--border-opacity);
+  background-color: var(--background-base);
   padding: 14px;
 }
 
@@ -46,7 +46,6 @@
 
 .training__swiper img {
   object-fit: cover;
-  // height: 200px;
   overflow-x: hidden;
 }
 
@@ -152,6 +151,32 @@
 @media screen and (width >= 768px) {
   .training {
     padding: 40px 0 42px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .training::before {
+    position: absolute;
+    content: "";
+    width: 318px;
+    height: 280px;
+    bottom: 158px;
+    right: 0;
+    background-image: url("/img/training-tablet@x1.png");
+    background-size: cover;
+    z-index: 1;
+  }
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .training::before {
+      position: absolute;
+      content: "";
+      width: 318px;
+      height: 280px;
+      bottom: 158px;
+      right: 0;
+      background-image: url("/img/training-tablet@x2.png");
+      background-size: cover;
+    }
   }
 
   .training__title h3 {
@@ -222,6 +247,7 @@
     column-gap: 146px;
     flex-direction: row;
     flex-wrap: wrap;
+    z-index: 2;
   }
 
   .training__process-item {
@@ -273,6 +299,30 @@
     padding: 40px 0 34px;
   }
 
+  .training::before {
+    position: absolute;
+    content: "";
+    width: 633px;
+    height: 276px;
+    bottom: 0;
+    right: 0;
+    background-image: url("/img/training-desktop@x1.png");
+    background-size: cover;
+    z-index: 1;
+  }
+
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .training::before {
+      position: absolute;
+      content: "";
+      width: 633px;
+      height: 276px;
+      bottom: 0;
+      right: 0;
+      background-image: url("/img/training-desktop@x2.png");
+      background-size: cover;
+    }
+  }
   .training__title h3 {
     padding: 20px 0 12px;
     line-height: 41px;

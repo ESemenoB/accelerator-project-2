@@ -1,7 +1,31 @@
 .tours {
   color: var(--font-base);
-  background-color: var(--background-base);
   padding: 20px 0;
+  position: relative;
+}
+
+.tours::after {
+  position: absolute;
+  content: "";
+  width: 141px;
+  height: 615px;
+  top: 0;
+  right: 0;
+  background-image: url("/img/tours-mobile@x1.png");
+  background-size: cover;
+  z-index: 0;
+}
+
+@media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .tours::after {
+    position: absolute;
+    content: "";
+    width: 141px;
+    height: 615px;
+    top: 0;
+    right: 0;
+    background-image: url("/img/tours-mobile@x2.png");
+  }
 }
 
 .tours__title {
@@ -224,6 +248,8 @@
   gap: 10.5px;
   letter-spacing: 0.04em;
   @include buttons-big;
+  position: relative;
+  z-index: 1;
 
   svg {
     width: 12px;
@@ -243,6 +269,30 @@
 @media screen and (width >= 768px) {
   .tours {
     padding: 40px 0;
+  }
+
+  .tours::after {
+    position: absolute;
+    content: "";
+    width: 425px;
+    height: 1538px;
+    top: 0;
+    right: 0;
+    background-image: url("/img/tours-tablet@x1.png");
+    background-size: cover;
+    z-index: 0;
+  }
+
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .tours::after {
+      position: absolute;
+      content: "";
+      width: 425px;
+      height: 1538px;
+      top: 0;
+      right: 0;
+      background-image: url("/img/tours-tablet@x2.png");
+    }
   }
 
   .tours__container {
@@ -379,6 +429,7 @@
     gap: 4px;
     top: 20px;
     right: 0;
+    z-index: 1;
   }
 
   .tours__button-prev,
@@ -398,6 +449,30 @@
 @media screen and (width >= 1440px) {
   .tours {
     padding: 100px 0;
+  }
+
+  .tours::after {
+    position: absolute;
+    content: "";
+    width: 602px;
+    height: 1504px;
+    top: 0;
+    right: 0;
+    background-image: url("/img/tours-desktop@x1.png");
+    background-size: cover;
+    z-index: 0;
+  }
+
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .tours::after {
+      position: absolute;
+      content: "";
+      width: 602px;
+      height: 1504px;
+      top: 0;
+      right: 0;
+      background-image: url("/img/tours-desktop@x1.png");
+    }
   }
 
   .tours__title {

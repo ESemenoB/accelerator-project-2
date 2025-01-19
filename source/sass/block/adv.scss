@@ -70,6 +70,7 @@
   min-height: 239px;
   padding: 19px 9px;
   border: 1px solid var(--border-opacity);
+  background-color: var(--background-base);
 }
 
 .adv__swiper .slide__container {
@@ -115,15 +116,39 @@
 
 @media screen and (width >= 768px) {
   .adv {
+    position: relative;
     padding: 40px 0;
     width: 768px;
   }
 
+  .adv::after {
+    position: absolute;
+    content: "";
+    width: 768px;
+    height: 996px;
+    top: 166px;
+    right: 0;
+    background-image: url("/img/adv-tablet@x1.png");
+    background-size: cover;
+    z-index: 0;
+  }
+
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .adv::after {
+      position: absolute;
+      content: "";
+      width: 768px;
+      height: 996px;
+      top: 0;
+      right: 0;
+      background-image: url("/img/adv-tablet@x2.png");
+      background-size: cover;
+      z-index: 0;
+    }
+  }
+
   .adv__title h3 {
-    margin: 21.6px 10px;
-    font-size: 24px;
-    letter-spacing: 0.03em;
-    line-height: 21.2px;
+    margin: 20px 10px;
   }
 
   .adv__title p {
@@ -137,7 +162,7 @@
 
   .adv__swiper {
     width: 678px;
-    margin-top: 28.6px;
+    margin-top: 30px;
   }
 
   .adv__swiper .swiper-wrapper {
@@ -179,6 +204,32 @@
   .adv {
     padding: 100px 0;
     width: 1440px;
+  }
+
+  .adv::after {
+    position: absolute;
+    content: "";
+    width: 1440px;
+    height: 447px;
+    top: -292px;
+    left: 0;
+    background-image: url("/img/adv-desktop@x1.png");
+    background-size: cover;
+    z-index: 0;
+  }
+
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .adv::after {
+      position: absolute;
+      content: "";
+      width: 1440px;
+      height: 447px;
+      top: -292px;
+      left: 0;
+      background-image: url("/img/adv-desktop@x2.png");
+      background-size: cover;
+      z-index: 0;
+    }
   }
 
   .adv__title h3 {
