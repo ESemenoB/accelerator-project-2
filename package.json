@@ -45,11 +45,11 @@
     "vite": "5.2.8",
     "vite-plugin-image-optimizer": "1.1.7",
     "vite-plugin-minify": "1.5.2",
-    "vitest": "^0.34.6",
+    "vitest": "0.34.6",
     "w3c-html-validator": "1.7.0"
   },
   "dependencies": {
-    "puppeteer": "^24.1.0",
+    "puppeteer": "24.1.0",
     "swiper": "11.1.1"
   },
   "engines": {
